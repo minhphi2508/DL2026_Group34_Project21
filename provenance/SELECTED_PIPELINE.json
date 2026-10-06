@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_USER_SELECTED_CPU_INTEGRATION_VERIFIED",
+  "selected_utc": "2026-10-06T11:22:22.023513+00:00",
+  "pipeline": {
+    "variant": "B_wan_v3_mask",
+    "wan_scratch_threshold": 0.4,
+    "v3_channel": "missing_only",
+    "v3_missing_threshold": 0.5,
+    "v3_native_ellipse_radius": 3,
+    "v3_mask_resize": "PIL_NEAREST",
+    "v3_scaled_prediction_union": false,
+    "C3": false,
+    "MAT": false,
+    "FFDNet": false,
+    "Restormer": false,
+    "scratch_multiscale_union": false,
+    "wan_global": "Scratch_and_Quality_restore",
+    "face": "dlib68 -> Setting_9_epoch_100 FaceSR256 -> official warp/blend; skip if no face",
+    "common_max_side": 512,
+    "HR": false,
+    "validated_device": "cpu",
+    "FP32": true,
+    "TF32": false,
+    "torch_threads": 2,
+    "opencv_threads": 1,
+    "native_display": "LANCZOS display resize, not superresolution"
+  },
+  "historical_numeric_gate_passed": false,
+  "benchmark_score_for_this_pipeline_available": false,
+  "reference": "docs/FINAL_PIPELINE.md"
+}

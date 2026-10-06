@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "staged_bound_files": 87,
+  "isolated_cpu_portrait_final_pixel_equal": true,
+  "isolated_environment": true,
+  "device": "cpu",
+  "cuda_inference_validated": false
+}

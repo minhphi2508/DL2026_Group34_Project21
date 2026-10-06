@@ -1,0 +1,39 @@
+version: dataset_v1
+seed: 20260929
+
+sources:
+  HKM:
+    repo_id: NatLibFi/Finna-HKM-images
+    license: CC-BY-4.0
+    max_year: 1917
+    candidate_target: 600
+    core_target: 400
+  JOKA:
+    repo_id: NatLibFi/Finna-JOKA-images
+    license: CC-BY-4.0
+    max_year: 1940
+    candidate_target: 600
+    core_target: 400
+  SYNOLD:
+    repository: wushunshun/SynOld
+    role: external_synthetic_scratch
+  MS_OLD:
+    repository: microsoft/Bringing-Old-Photos-Back-to-Life
+    role: external_real_qualitative
+
+core_split_per_source:
+  train: 300
+  val: 50
+  test: 50
+
+review_decisions:
+  - core
+  - real_damage
+  - reject
+
+technical_candidate_filter:
+  min_short_side: 300
+  min_long_side: 500
+  min_aspect_ratio: 0.40
+  max_aspect_ratio: 2.50
+  min_luma_std: 8.0

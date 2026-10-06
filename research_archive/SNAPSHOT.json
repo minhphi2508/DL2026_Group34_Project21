@@ -1,0 +1,166 @@
+[
+  {
+    "path": "data_builder/dataset_config.yaml",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/LICENSE_NOTES.md",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/ORIGINAL_SOURCE_MANIFEST.json",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/README.md",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/requirements.txt",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/SOURCE_LOCK.md",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/01_fetch_finna_candidates.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/02_make_contact_sheets.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/03_finalize_finna.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/04_fetch_synold.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/05_fetch_microsoft_real.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/06_audit_sources.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/07_dataset_status.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/08b_make_core_reaudit_pack.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/08c_apply_core_reaudit.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/08_make_calibration_pack.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/09_generate_benchmark_v1.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/10_audit_benchmark_v1.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/scripts/11_make_benchmark_preview.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/src/common.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "data_builder/src/degradation_v1.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/BUNDLE_MANIFEST.json",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/data.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/DECISIONS_VI.md",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/evaluate.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/model.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/operator.ps1",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/paired_sampling.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/protocol.json",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/README_VI.md",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/return_outputs.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/runner.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/runtime_precision.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/RUN_RTX.ps1",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/run_rtx.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/smoke.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/verify_operator_contracts.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/__init__.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/assets/degradation_config_v1.yaml",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/assets/degradation_v1.py",
+    "origin": "Original group research snapshot; not needed for inference"
+  },
+  {
+    "path": "training/v3/assets/validation_assets_sha256.json",
+    "origin": "Original group research snapshot; not needed for inference"
+  }
+]

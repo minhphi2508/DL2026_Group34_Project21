@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "conditions": 6,
+  "order_variants": 3,
+  "cached_portrait_ablations": 5,
+  "matched_masks": true,
+  "matched_geometry": true,
+  "source_and_weights_unchanged": true,
+  "baseline_historical_finals_exact": 4,
+  "face_pipeline_completed": true,
+  "references_evaluation_only": true,
+  "noise_probe_empty_masks_are_auxiliary": true,
+  "no_real_photo_quality_scores": true,
+  "heldout_test_access": false,
+  "training": false,
+  "parameter_tuning": false,
+  "default_changed": false
+}

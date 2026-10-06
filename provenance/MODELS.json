@@ -1,0 +1,83 @@
+{
+  "models": [
+    {
+      "path": "models/v3/twohead_candidate_v3_epoch14.pt",
+      "sha256": "73e64cc06d5bcc8960e6b7adc19a25f88cd2ae1a4ddfdc85dd31405dcf4a18d3",
+      "bytes": 97925339,
+      "origin": "project V3 checkpoint tracked in this repository"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
+      "sha256": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d",
+      "bytes": 3498887,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/VAE_A_quality/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
+      "sha256": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a",
+      "bytes": 3498887,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/VAE_B_scratch/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
+      "sha256": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578",
+      "bytes": 205392667,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth"
+    },
+    {
+      "path": "third_party/wan/Face_Enhancement/checkpoints/Setting_9_epoch_100/latest_net_G.pth",
+      "sha256": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569",
+      "bytes": 368738923,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/Setting_9_epoch_100/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/detection/FT_Epoch_latest.pt",
+      "sha256": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95",
+      "bytes": 451663663,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/detection/FT_Epoch_latest.pt"
+    },
+    {
+      "path": "third_party/wan/Face_Detection/shape_predictor_68_face_landmarks.dat",
+      "sha256": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f",
+      "bytes": 99693937,
+      "origin": "official Wan release or dlib landmark model"
+    }
+  ],
+  "downloads": [
+    {
+      "name": "global_checkpoints.zip",
+      "url": "https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life/releases/download/v1.0/global_checkpoints.zip",
+      "bytes": 2036400762,
+      "sha256": "3ff4c52a3a65d71e458ff24b1d7339b326d216ef793c2027761e11efb30f7882",
+      "models": [
+        "third_party/wan/Global/checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
+        "third_party/wan/Global/checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
+        "third_party/wan/Global/checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
+        "third_party/wan/Global/checkpoints/detection/FT_Epoch_latest.pt"
+      ]
+    },
+    {
+      "name": "face_checkpoints.zip",
+      "url": "https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life/releases/download/v1.0/face_checkpoints.zip",
+      "bytes": 684354563,
+      "sha256": "dc804c850bf167f3d256a349f2c771c585fdc0cf46c210853a86e05a0d7c4be3",
+      "models": [
+        "third_party/wan/Face_Enhancement/checkpoints/Setting_9_epoch_100/latest_net_G.pth"
+      ]
+    },
+    {
+      "name": "landmarks.dat.bz2",
+      "url": "https://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2",
+      "bytes": 64040097,
+      "sha256": "7d6637b8f34ddb0c1363e09a4628acb34314019ec3566fd66b80c04dda6980f5",
+      "models": [
+        "third_party/wan/Face_Detection/shape_predictor_68_face_landmarks.dat"
+      ]
+    }
+  ]
+}

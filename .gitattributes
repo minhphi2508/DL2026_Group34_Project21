@@ -1,0 +1,10 @@
+# Preserve audited source/protocol bytes: checksums include line endings.
+*.py -text
+*.md text eol=lf
+*.json -text
+*.txt text eol=lf
+*.cmd text eol=crlf
+*.pt binary
+*.png binary
+*.jpg binary
+third_party/** -text

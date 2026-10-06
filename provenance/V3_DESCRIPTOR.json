@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED_RESEARCH_INTEGRATION_CANDIDATE",
+  "architecture": "smp.Unet/resnet34/classes2",
+  "classes": [
+    "visible_scratch",
+    "missing"
+  ],
+  "epoch": 14,
+  "numeric_gate_passed": false,
+  "numeric_checks_passed": 20,
+  "numeric_checks_total": 21,
+  "promotion": "REVIEWED_ACADEMIC_PROTOTYPE",
+  "checkpoint": {
+    "path": "models/v3/twohead_candidate_v3_epoch14.pt",
+    "sha256": "73e64cc06d5bcc8960e6b7adc19a25f88cd2ae1a4ddfdc85dd31405dcf4a18d3"
+  },
+  "protocol": {
+    "path": "provenance/v3_protocol.json",
+    "sha256": "7ff3cdb69d67aa38ea58ffd96c381ad5002b952047320a9cb7cc38ea6a022d7e"
+  },
+  "bundle_manifest": {
+    "path": "provenance/v3_bundle_manifest.json",
+    "sha256": "f432706a7b7111d1e1a386e490534514fbeec9644a6f52b74f1a6b8adc114d36"
+  },
+  "scope": "Selected on validation for bounded scratch/missing repair; numeric eligibility remains false; not certified universal restoration"
+}

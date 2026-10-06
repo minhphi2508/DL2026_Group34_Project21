@@ -1,0 +1,149 @@
+{
+  "experiment_id": "missing_mask_twohead_v1",
+  "status": "PREREGISTERED_RESEARCH_NOT_PRODUCTION",
+  "seed": 20261004,
+  "architecture": "smp.Unet/resnet34",
+  "classes": [
+    "visible_scratch",
+    "missing"
+  ],
+  "initialization": "warmstart_all_twohead_model_tensors_from_v2_epoch20; fresh_optimizer_scheduler_rng; not_epoch_resume",
+  "source_checkpoint_sha256": "797fd66ef68cadf33173843f99ae3041e9b499aadddacf3485cba6315ac12fe9",
+  "core_manifest_sha256": "abb4fb1c6bf6e0de3cb26d459021be75c3b05614d5e896827ca4c5b6ab6aab1b",
+  "benchmark_manifest_sha256": "e560b5c86bf6126a76cfd068a0639bccfbcaa382df37b7773f523e2f7ae3c7cd",
+  "input_size": 512,
+  "input_normalization": "imagenet_rgb",
+  "training": {
+    "photos": 600,
+    "epochs_max": 15,
+    "early_stopping_patience": 5,
+    "wall_budget_seconds": 3600,
+    "wall_budget_policy": "epoch_boundary_stop; estimate_next_epoch_from_last_completed_epoch; a running_epoch_may_exceed_budget",
+    "batch_size": 4,
+    "workers": 0,
+    "threads": 2,
+    "mixture_counts": {
+      "scratch": 180,
+      "missing": 120,
+      "combined": 150,
+      "clean": 50,
+      "noise": 50,
+      "age_quality": 50
+    },
+    "augmentation": "shared_dihedral_no_interpolation",
+    "precision": "CUDA_bfloat16_if_supported_else_float32; never_float16",
+    "optimizer": "AdamW",
+    "learning_rate": 3e-05,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "nonfinite_policy": "abort_before_optimizer_step; only_resume_last_completed_epoch",
+    "scheduler": {
+      "name": "ReduceLROnPlateau",
+      "factor": 0.5,
+      "patience": 2,
+      "min_lr": 1e-06
+    },
+    "loss": {
+      "head_weights": [
+        1.0,
+        1.0
+      ],
+      "bce_weight": 1.0,
+      "dice_weight": 1.0,
+      "smooth": 1.0,
+      "empty_dice": "mean_probability",
+      "reduction": "float32_per_image_per_head"
+    },
+    "generation_epoch_offset": 20,
+    "sampling_policy": {
+      "name": "paired_low_same_context_v1",
+      "sampler_seed": 20261005,
+      "pairs_per_suite": 45,
+      "positive_suites": [
+        "missing",
+        "combined"
+      ],
+      "paired_negative_suites": {
+        "missing": "clean",
+        "combined": "noise"
+      },
+      "positive_slot_counts": {
+        "medium": 22,
+        "high": 23
+      },
+      "new_positive_severity": "low",
+      "noise_negative_per_severity": 15,
+      "ordinary_slots_exactly_unchanged": 420,
+      "unique_sources_per_epoch": 510,
+      "low_positive_counts": {
+        "missing": 85,
+        "combined": 95
+      },
+      "paired_crop_and_augmentation": "same_pre_degradation_RGB_and_shared_dihedral_no_interpolation",
+      "source_selection": "deterministic_train_schedule_only_no_validation_mining",
+      "parent_optimizer_state_used": false
+    }
+  },
+  "validation": {
+    "split": "val",
+    "conditions": 1600,
+    "source_photos": 100,
+    "all_tracks": 1500,
+    "unique_clean_reference": 100,
+    "thresholds": {
+      "scratch": 0.4,
+      "missing": 0.5
+    },
+    "threshold_search": false,
+    "pad_multiple": 32,
+    "resize": false,
+    "score": "0.5*official_scratch_macro_dice_on_600 + 0.5*missing_macro_dice_on_600",
+    "negative_union_conditions": 700,
+    "union_positive_conditions": 900,
+    "save_masks_for_best": true,
+    "final_test_payloads": "FORBIDDEN"
+  },
+  "numerical_eligibility_gates": {
+    "scratch_macro_dice_min": 0.6747195218042517,
+    "scratch_macro_precision_min": 0.7947245488319553,
+    "scratch_macro_recall_min": 0.600075313717705,
+    "scratch_suite_dice_min": 0.6438694710280342,
+    "missing_per_suite_severity_macro_recall_min": 0.9,
+    "missing_per_suite_severity_macro_precision_min": 0.8,
+    "union_positive_macro_dice_min": 0.75,
+    "union_negative_mean_coverage_max": 0.001,
+    "union_negative_p95_coverage_max": 0.005,
+    "union_negative_max_coverage_max": 0.02,
+    "union_positive_mean_outside_synthetic_gt_fraction_max": 0.003
+  },
+  "gate_scope": "Predeclared candidate eligibility, not user-approved product acceptance; numerical PASS never auto-promotes",
+  "mandatory_followup": [
+    "matched_frozen_baseline_tails_and_source_cluster_uncertainty",
+    "human_review_faces_text_paper_windows_dark_clothes_rails_wires",
+    "fixed_mask_inpainting_comparison_and_outside_damage_preservation",
+    "input_only_stage_policy",
+    "native_resolution_memory_runtime_scope"
+  ],
+  "promotion": "MANUAL_REVIEW_ONLY; keep all frozen modules unchanged; do not open test during development",
+  "protocol_revision": 3,
+  "supersedes_protocol_sha256": "1bd0ddab9b3d60bd0ef9297ae7ead0aca47aa7c2ac87da2dcd9b0dc6b0447f53",
+  "artifact_candidate_directory": "candidate_v3_pair_replay",
+  "numerical_policy": {
+    "fp32_cudnn_allow_tf32": false,
+    "fp32_matmul_allow_tf32": false,
+    "float32_matmul_precision": "highest",
+    "bfloat16_autocast": "unchanged_from_training_precision"
+  },
+  "ancestor_frozen_checkpoint_sha256": "24ab3415b17a6eb8a3b32e42aea08b3f4526e961a1c4267f93a9d5f35968b63c",
+  "parent_protocol_sha256": "1bd0ddab9b3d60bd0ef9297ae7ead0aca47aa7c2ac87da2dcd9b0dc6b0447f53",
+  "parent_bundle_sha256": "d2530399c8c8cd754592b557ae95a4054061d861cf757d6a99e6d9b880867347",
+  "parent_epoch": 20,
+  "parent_numeric_gate_passed": false,
+  "research_question": "Does paired low-severity replay improve small-region recall/preservation relative to immutable v2 under one bounded sampling revision? Not a causal unpaired fine-tuning ablation.",
+  "selection_limitations": [
+    "Validation reused after v2 selection; final heldout remains unopened",
+    "Warmstart plus extra training confound any causal attribution solely to sampling; compare practical candidates",
+    "No threshold search/global morphology; all original numeric gates unchanged",
+    "Fallback is immutable v2 if revision worsens quality/tails; gate failure reported honestly"
+  ]
+}

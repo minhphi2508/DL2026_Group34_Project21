@@ -1,0 +1,13 @@
+# One shared project-level dependency file.
+# Team members request additions through the leader; do not create module-local requirements.txt files.
+
+numpy>=1.26,<3
+pandas>=2.1,<4
+Pillow>=10,<13
+PyYAML>=6,<7
+requests>=2.31,<3
+tqdm>=4.66,<5
+huggingface_hub>=0.25,<2
+
+# Deep-learning stack intentionally NOT pinned yet.
+# Add one agreed torch/torchvision/CUDA combination after model candidates are approved.

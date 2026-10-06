@@ -1,0 +1,449 @@
+[
+  {
+    "id": "photo_00_boy",
+    "kind": "real_portrait",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "f0a0f7b55f9fe7e58a891f657f70a22d003f9901a305944012e5df5a6454b974",
+        "faces": [
+          "photo_00_boy_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "3846facd42d34c69d3204753ae7450c91955c3344ed97c2ccc6a1f1deeda0dc4",
+        "faces": [
+          "photo_00_boy_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 212891,
+        "changed_pixels_vs_S0_final": 212890
+      },
+      "S2_union": {
+        "raw_sha256": "108825f6ca23ab2c08dd06cae46e332a0e01a3cc324ec62004a179bfdb921123",
+        "faces": [
+          "photo_00_boy_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 9797,
+        "changed_pixels_vs_S0_final": 61275
+      }
+    },
+    "scores": {},
+    "score_scope": "No reference quality score for real user photos"
+  },
+  {
+    "id": "photo_01_woman",
+    "kind": "real_portrait",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "db90f1b6dfa371d9fe39cffe0cbc8b09c81055ba1f25cb8a9bc17c7d02a10d94",
+        "faces": [
+          "photo_01_woman_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "c2edc03490e314e93611d63a866c5df8b173a59efaaac2391233e74d4942ffc4",
+        "faces": [
+          "photo_01_woman_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 188114,
+        "changed_pixels_vs_S0_final": 188123
+      },
+      "S2_union": {
+        "raw_sha256": "cf046c47f9f91cad30cee311ec7ba14314b60713cae9b3b9a35e8365b3db6993",
+        "faces": [
+          "photo_01_woman_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 57423,
+        "changed_pixels_vs_S0_final": 67262
+      }
+    },
+    "scores": {},
+    "score_scope": "No reference quality score for real user photos"
+  },
+  {
+    "id": "photo_02_man",
+    "kind": "real_portrait",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "64863a38547cf985706ee183ad115ad873e049b454d19adc07d6963205cb6204",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "a624700154bf18c8e69ec9a59ef14b8706e59b49af1f6624cc74ba2c5fb617be",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 196450,
+        "changed_pixels_vs_S0_final": 196450
+      },
+      "S2_union": {
+        "raw_sha256": "64863a38547cf985706ee183ad115ad873e049b454d19adc07d6963205cb6204",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      }
+    },
+    "scores": {},
+    "score_scope": "No reference quality score for real user photos"
+  },
+  {
+    "id": "27_thuyen_buom_hu_vua",
+    "kind": "real_scene",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "d237886e89916a37c2bbe4557fc1b7951ad9d336f9af3814a0f7ac5100853502",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "05724b5c97cef725cf969e7fc620da7c4398abf82f25e934162ef96daf83c019",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 177762,
+        "changed_pixels_vs_S0_final": 177762
+      },
+      "S2_union": {
+        "raw_sha256": "266ac514c93301f3472d686f8ec0a02f8e6f382ed3ae7a37403c1d9e785e4550",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 50519,
+        "changed_pixels_vs_S0_final": 50519
+      }
+    },
+    "scores": {},
+    "score_scope": "No reference quality score for real user photos"
+  },
+  {
+    "id": "30_vet_hu_vua",
+    "kind": "real_scene",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "ed2819a6964c9d22523370ec8b1542d780c28bde5b9de8474ae46eedf32404b9",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "dacdf1d0ab74bd6db3c6ca9868975ff2591c579c716403d32019a7661425387d",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 176551,
+        "changed_pixels_vs_S0_final": 176551
+      },
+      "S2_union": {
+        "raw_sha256": "fc84be44dd3eda4d0abc9cdec8fb914b9f019b0432a9d71755e09e63ae9a5089",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 85758,
+        "changed_pixels_vs_S0_final": 85758
+      }
+    },
+    "scores": {},
+    "score_scope": "No reference quality score for real user photos"
+  },
+  {
+    "id": "control_astronaut",
+    "kind": "intact_proxy",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "104d11fe3583fdcf5879f6128eef5a32c108ff23b4da9cd1a30c318d202b35ad",
+        "faces": [
+          "control_astronaut_1.png",
+          "control_astronaut_2.png"
+        ],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "b7ca3c4b730b78f24c3deb9d41c26e974df65f3e7812eeba9f2908bb6de47b75",
+        "faces": [
+          "control_astronaut_1.png",
+          "control_astronaut_2.png"
+        ],
+        "changed_pixels_vs_S0_global": 96803,
+        "changed_pixels_vs_S0_final": 108427
+      },
+      "S2_union": {
+        "raw_sha256": "27b830301fcd2fbac120a708974caf25671477358b80612116f3117e133b93e4",
+        "faces": [
+          "control_astronaut_1.png",
+          "control_astronaut_2.png"
+        ],
+        "changed_pixels_vs_S0_global": 90518,
+        "changed_pixels_vs_S0_final": 102948
+      }
+    },
+    "scores": {
+      "S0_current": {
+        "global_before_face": {
+          "mse": 128.51007970174155,
+          "psnr": 27.04143167930839,
+          "ssim": 0.8235285150504902
+        },
+        "final_after_face": {
+          "mse": 128.98725382486978,
+          "psnr": 27.02533564266504,
+          "ssim": 0.8229654964571224
+        }
+      },
+      "S1_v3_both": {
+        "global_before_face": {
+          "mse": 123.78165054321289,
+          "psnr": 27.204240914541565,
+          "ssim": 0.8230061053402214
+        },
+        "final_after_face": {
+          "mse": 124.41458511352539,
+          "psnr": 27.18209065215469,
+          "ssim": 0.8220014161682055
+        }
+      },
+      "S2_union": {
+        "global_before_face": {
+          "mse": 131.40178807576498,
+          "psnr": 26.94479085856063,
+          "ssim": 0.8230163036437995
+        },
+        "final_after_face": {
+          "mse": 131.36419296264648,
+          "psnr": 26.946033587944456,
+          "ssim": 0.8222429223881691
+        }
+      }
+    },
+    "score_scope": "Input-preservation fidelity on intact proxy, not historical quality"
+  },
+  {
+    "id": "control_coffee",
+    "kind": "intact_proxy",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "3961e1b5e57a53fa4fcd0a8cfd1ba50aa478d1240e43314f200cfef2286ccb66",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "e46fe1167dd0b858cbe1efd253b4a653b1f40eb50550071969a09b183ac7e909",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 154329,
+        "changed_pixels_vs_S0_final": 154329
+      },
+      "S2_union": {
+        "raw_sha256": "2202b84f00714c88d2afcc8cf082d9ee74ac4c3ed743bd1226e7fab0256de946",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 51493,
+        "changed_pixels_vs_S0_final": 51493
+      }
+    },
+    "scores": {
+      "S0_current": {
+        "global_before_face": {
+          "mse": 166.74062771267361,
+          "psnr": 25.9103892875645,
+          "ssim": 0.8039520310060689
+        },
+        "final_after_face": {
+          "mse": 166.74062771267361,
+          "psnr": 25.9103892875645,
+          "ssim": 0.8039520310060689
+        }
+      },
+      "S1_v3_both": {
+        "global_before_face": {
+          "mse": 157.88526359437003,
+          "psnr": 26.14738764351141,
+          "ssim": 0.8175469367447029
+        },
+        "final_after_face": {
+          "mse": 157.88526359437003,
+          "psnr": 26.14738764351141,
+          "ssim": 0.8175469367447029
+        }
+      },
+      "S2_union": {
+        "global_before_face": {
+          "mse": 175.50089130704364,
+          "psnr": 25.688010344321768,
+          "ssim": 0.8029718391695937
+        },
+        "final_after_face": {
+          "mse": 175.50089130704364,
+          "psnr": 25.688010344321768,
+          "ssim": 0.8029718391695937
+        }
+      }
+    },
+    "score_scope": "Input-preservation fidelity on intact proxy, not historical quality"
+  },
+  {
+    "id": "scratch_only_astronaut",
+    "kind": "paired_scratch_only",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "e5024d3b373541f70952440ddaab39b013aa56d399f63d59fc2cd90bf0214655",
+        "faces": [
+          "scratch_only_astronaut_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "73657948654fdd92b688c3df0b47dacbdc7268c451afd5847830c7dceef50522",
+        "faces": [
+          "scratch_only_astronaut_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 261632,
+        "changed_pixels_vs_S0_final": 261631
+      },
+      "S2_union": {
+        "raw_sha256": "ef53928f4404e59df029740b8a5e192e52d3e4fbab5c97f5a909e6a20e58b414",
+        "faces": [
+          "scratch_only_astronaut_1.png"
+        ],
+        "changed_pixels_vs_S0_global": 181969,
+        "changed_pixels_vs_S0_final": 184354
+      }
+    },
+    "scores": {
+      "Input": {
+        "mse": 924.8991495768229,
+        "psnr": 18.46985980745194,
+        "ssim": 0.7285755152348933,
+        "scratch_mse": 15436.223509687825,
+        "outside_scratch_mse": 0.0
+      },
+      "S0_current": {
+        "global_before_face": {
+          "mse": 402.5862185160319,
+          "psnr": 22.082214569940696,
+          "ssim": 0.6964268347155566,
+          "scratch_mse": 1333.3074213195814,
+          "outside_scratch_mse": 343.2654268636609
+        },
+        "final_after_face": {
+          "mse": 404.8281898498535,
+          "psnr": 22.058096142743775,
+          "ssim": 0.6950308330896998,
+          "scratch_mse": 1334.4990980666794,
+          "outside_scratch_mse": 345.57434016266495
+        }
+      },
+      "S1_v3_both": {
+        "global_before_face": {
+          "mse": 484.9411150614421,
+          "psnr": 21.273913541346587,
+          "ssim": 0.680175909802201,
+          "scratch_mse": 3621.7293563379385,
+          "outside_scratch_mse": 285.0136167323359
+        },
+        "final_after_face": {
+          "mse": 486.03343454996747,
+          "psnr": 21.264142151835816,
+          "ssim": 0.6788448632094836,
+          "scratch_mse": 3615.8746206574565,
+          "outside_scratch_mse": 286.54871630477567
+        }
+      },
+      "S2_union": {
+        "global_before_face": {
+          "mse": 393.34619394938153,
+          "psnr": 22.183054086121018,
+          "ssim": 0.7020613186050619,
+          "scratch_mse": 1205.7784215105792,
+          "outside_scratch_mse": 341.5647122794061
+        },
+        "final_after_face": {
+          "mse": 395.1433041890462,
+          "psnr": 22.16325733768643,
+          "ssim": 0.7006144035764871,
+          "scratch_mse": 1205.04772818913,
+          "outside_scratch_mse": 343.5229355440403
+        }
+      }
+    },
+    "score_scope": "Artificial scratch probe; reference has same aging/noise before added scratches"
+  },
+  {
+    "id": "scratch_only_camera",
+    "kind": "paired_scratch_only",
+    "policies": {
+      "S0_current": {
+        "raw_sha256": "698509ed0ccaabd87b1ffefc5464befd8a08fc0d486b47d6c644e27e443645b1",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 0,
+        "changed_pixels_vs_S0_final": 0
+      },
+      "S1_v3_both": {
+        "raw_sha256": "bab02f42abeaaf0bf30955f88eee666f14939bfbc4cc716dee9341cee98f2315",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 262082,
+        "changed_pixels_vs_S0_final": 262082
+      },
+      "S2_union": {
+        "raw_sha256": "597f5aeed70fcf49911f3b18178d7156f07351d6d937fa2feed857644658a66b",
+        "faces": [],
+        "changed_pixels_vs_S0_global": 235551,
+        "changed_pixels_vs_S0_final": 235551
+      }
+    },
+    "scores": {
+      "Input": {
+        "mse": 803.7256050109863,
+        "psnr": 19.07972556608912,
+        "ssim": 0.7292783236291265,
+        "scratch_mse": 13413.882027121666,
+        "outside_scratch_mse": 0.0
+      },
+      "S0_current": {
+        "global_before_face": {
+          "mse": 499.13001251220703,
+          "psnr": 21.14866676242103,
+          "ssim": 0.5753476264883893,
+          "scratch_mse": 3166.099594660555,
+          "outside_scratch_mse": 329.1470504293863
+        },
+        "final_after_face": {
+          "mse": 499.13001251220703,
+          "psnr": 21.14866676242103,
+          "ssim": 0.5753476264883893,
+          "scratch_mse": 3166.099594660555,
+          "outside_scratch_mse": 329.1470504293863
+        }
+      },
+      "S1_v3_both": {
+        "global_before_face": {
+          "mse": 620.0547815958658,
+          "psnr": 20.206502999280673,
+          "ssim": 0.5552505033121076,
+          "scratch_mse": 4839.630334670317,
+          "outside_scratch_mse": 351.1143497120968
+        },
+        "final_after_face": {
+          "mse": 620.0547815958658,
+          "psnr": 20.206502999280673,
+          "ssim": 0.5552505033121076,
+          "scratch_mse": 4839.630334670317,
+          "outside_scratch_mse": 351.1143497120968
+        }
+      },
+      "S2_union": {
+        "global_before_face": {
+          "mse": 442.96860122680664,
+          "psnr": 21.667074174827953,
+          "ssim": 0.5910967220257467,
+          "scratch_mse": 2416.6011544746502,
+          "outside_scratch_mse": 317.17642507686213
+        },
+        "final_after_face": {
+          "mse": 442.96860122680664,
+          "psnr": 21.667074174827953,
+          "ssim": 0.5910967220257467,
+          "scratch_mse": 2416.6011544746502,
+          "outside_scratch_mse": 317.17642507686213
+        }
+      }
+    },
+    "score_scope": "Artificial scratch probe; reference has same aging/noise before added scratches"
+  }
+]

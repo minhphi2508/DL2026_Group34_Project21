@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "photo_00_boy",
+    "kind": "real_portrait",
+    "baseline_exact": true,
+    "processing_size": [
+      416,
+      512
+    ],
+    "native_size": [
+      494,
+      619
+    ],
+    "detector_seconds": 0.7043278000201099,
+    "components_coverage": {
+      "Wan_scratch": 0.11495267427884616,
+      "V3_scratch": 0.00016432542067307694,
+      "V3_missing": 0.00018780048076923078
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.11495736929086539,
+        "mask_pixels": 24485,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "124da4c6980903ef4e07ce7d3624e70c47d73ca37d8698f1cbbf56445b574303"
+      },
+      "S1_v3_both": {
+        "coverage": 0.0003521259014423077,
+        "mask_pixels": 75,
+        "added_vs_S0": 11,
+        "removed_vs_S0": 24421,
+        "sha256": "67a5c31216e872e2d2f17846490655e3c3c9fdee32d133a352cc7d12bd316564"
+      },
+      "S2_union": {
+        "coverage": 0.11500901442307693,
+        "mask_pixels": 24496,
+        "added_vs_S0": 11,
+        "removed_vs_S0": 0,
+        "sha256": "b356051fb3214a9ca3fc70e4d7635c29db8e293876554890f65a473cc12e0256"
+      }
+    }
+  },
+  {
+    "id": "photo_01_woman",
+    "kind": "real_portrait",
+    "baseline_exact": true,
+    "processing_size": [
+      368,
+      512
+    ],
+    "native_size": [
+      474,
+      662
+    ],
+    "detector_seconds": 0.8294365000037942,
+    "components_coverage": {
+      "Wan_scratch": 0.1520040760869565,
+      "V3_scratch": 0.0013640030570652175,
+      "V3_missing": 0.0014701511548913043
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.1528373386548913,
+        "mask_pixels": 28797,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "99739a071900eedad0ec21557ab10cf57333a0883f81744679410f0ad3f5e96b"
+      },
+      "S1_v3_both": {
+        "coverage": 0.0028288468070652175,
+        "mask_pixels": 533,
+        "added_vs_S0": 46,
+        "removed_vs_S0": 28310,
+        "sha256": "f28a4ee9d983ec9a5937d2b4a5a108ee26f576c21e3533c0f539957cb931224e"
+      },
+      "S2_union": {
+        "coverage": 0.1530814792798913,
+        "mask_pixels": 28843,
+        "added_vs_S0": 46,
+        "removed_vs_S0": 0,
+        "sha256": "2242b75ba591dedff6d4ba662adc10d56e0d5347c9cf38a82463fca70d08c393"
+      }
+    }
+  },
+  {
+    "id": "photo_01_webp",
+    "kind": "real_portrait",
+    "baseline_exact": true,
+    "processing_size": [
+      368,
+      512
+    ],
+    "native_size": [
+      602,
+      844
+    ],
+    "detector_seconds": 1.2866886999981944,
+    "components_coverage": {
+      "Wan_scratch": 0.07576320482336957,
+      "V3_scratch": 0.0008969514266304348,
+      "V3_missing": 0.00012737771739130434
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.07576320482336957,
+        "mask_pixels": 14275,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "2bae6dadf5b4600bff27da3a18ebaabf1e9a56801f37c6b0457043822166eaa1"
+      },
+      "S1_v3_both": {
+        "coverage": 0.0010243291440217392,
+        "mask_pixels": 193,
+        "added_vs_S0": 46,
+        "removed_vs_S0": 14128,
+        "sha256": "dfbb6a461b2a597ebeb7ce2aac10b092fe5d164473cc3a8e0e95cd4ca02fc110"
+      },
+      "S2_union": {
+        "coverage": 0.07600734544836957,
+        "mask_pixels": 14321,
+        "added_vs_S0": 46,
+        "removed_vs_S0": 0,
+        "sha256": "bcbfd5141211b0a658c59a56b155722de8a5baa92204af0ec26db3adfee5672e"
+      }
+    }
+  },
+  {
+    "id": "photo_02_man",
+    "kind": "real_portrait",
+    "baseline_exact": true,
+    "processing_size": [
+      384,
+      512
+    ],
+    "native_size": [
+      400,
+      533
+    ],
+    "detector_seconds": 0.6441495000035502,
+    "components_coverage": {
+      "Wan_scratch": 0.16077168782552084,
+      "V3_scratch": 5.086263020833333e-06,
+      "V3_missing": 0.0031229654947916665
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.16335550944010416,
+        "mask_pixels": 32117,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "b2c9232bf37501ce832610d8e0aa5cc134cd60c10564a17c9660c50ead8666ec"
+      },
+      "S1_v3_both": {
+        "coverage": 0.0031229654947916665,
+        "mask_pixels": 614,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 31503,
+        "sha256": "2b75a59f047be8fac9aa746493887b8bf65d73508530972bf1262eebbf9c6f32"
+      },
+      "S2_union": {
+        "coverage": 0.16335550944010416,
+        "mask_pixels": 32117,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "b2c9232bf37501ce832610d8e0aa5cc134cd60c10564a17c9660c50ead8666ec"
+      }
+    }
+  },
+  {
+    "id": "photo_03_girl",
+    "kind": "real_portrait",
+    "baseline_exact": true,
+    "processing_size": [
+      320,
+      512
+    ],
+    "native_size": [
+      443,
+      693
+    ],
+    "detector_seconds": 0.8069060999841895,
+    "components_coverage": {
+      "Wan_scratch": 0.10343017578125,
+      "V3_scratch": 0.001776123046875,
+      "V3_missing": 0.0
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.10343017578125,
+        "mask_pixels": 16946,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "2a56c1092b990cbe7bc2beaca8373c01741a039b1bf4ca953361e9056f2ecd80"
+      },
+      "S1_v3_both": {
+        "coverage": 0.001776123046875,
+        "mask_pixels": 291,
+        "added_vs_S0": 24,
+        "removed_vs_S0": 16679,
+        "sha256": "b0caed7ec44ea8fa8844d3dff6d65c4285f36290d5801d7c4f5766472be2bdac"
+      },
+      "S2_union": {
+        "coverage": 0.10357666015625,
+        "mask_pixels": 16970,
+        "added_vs_S0": 24,
+        "removed_vs_S0": 0,
+        "sha256": "ea2c638a598f83de08d70f0db88e75c046b465c01e156eedd97c3cce0b9674be"
+      }
+    }
+  },
+  {
+    "id": "26_cua_do_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      737
+    ],
+    "detector_seconds": 2.109705600014422,
+    "components_coverage": {
+      "Wan_scratch": 0.10956365411931818,
+      "V3_scratch": 0.022078080610795456,
+      "V3_missing": 0.019664417613636364
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.12889515269886365,
+        "mask_pixels": 23230,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "fabdcf1b8f63463fde158bd47f56804f1d5313a100e586857164ae99ab788143"
+      },
+      "S1_v3_both": {
+        "coverage": 0.041742498224431816,
+        "mask_pixels": 7523,
+        "added_vs_S0": 1873,
+        "removed_vs_S0": 17580,
+        "sha256": "d7fd89260b9e87d0d9d1e111743c02c06fa5ea5eec9778143b0ed5c4cf2998ed"
+      },
+      "S2_union": {
+        "coverage": 0.13928777521306818,
+        "mask_pixels": 25103,
+        "added_vs_S0": 1873,
+        "removed_vs_S0": 0,
+        "sha256": "56f7aa51769a013c15c13ff68bb4ab492146c59f2ab9e7413f8e285ab7b79538"
+      }
+    }
+  },
+  {
+    "id": "27_thuyen_buom_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      737
+    ],
+    "detector_seconds": 2.3999603999836836,
+    "components_coverage": {
+      "Wan_scratch": 0.19312633167613635,
+      "V3_scratch": 0.0008101029829545455,
+      "V3_missing": 0.03518954190340909
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.22754461115056818,
+        "mask_pixels": 41009,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "d3e0c98878509a3272654df4a079f887ea650f2b173b301728207e1b94eb042e"
+      },
+      "S1_v3_both": {
+        "coverage": 0.03599964488636364,
+        "mask_pixels": 6488,
+        "added_vs_S0": 5,
+        "removed_vs_S0": 34526,
+        "sha256": "93af9d1c1d1d0e05dc053bb28b58f6659da001935c4fb121471d0ceab8be30e6"
+      },
+      "S2_union": {
+        "coverage": 0.2275723544034091,
+        "mask_pixels": 41014,
+        "added_vs_S0": 5,
+        "removed_vs_S0": 0,
+        "sha256": "bf789556a15b722b5deaf76dbb43b0bb167a4c21d16b095258fe660fd34ce156"
+      }
+    }
+  },
+  {
+    "id": "28_thuyen_ben_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      737
+    ],
+    "detector_seconds": 2.047380300005898,
+    "components_coverage": {
+      "Wan_scratch": 0.12371271306818182,
+      "V3_scratch": 0.0032182173295454545,
+      "V3_missing": 0.03855202414772727
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.16178755326704544,
+        "mask_pixels": 29158,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "6ddabfc34a75b36f6d649ea22dda32ed9c466f742295af30892a2cc36992bb6f"
+      },
+      "S1_v3_both": {
+        "coverage": 0.04177024147727273,
+        "mask_pixels": 7528,
+        "added_vs_S0": 183,
+        "removed_vs_S0": 21813,
+        "sha256": "a6feaa63933f517cbeae20adcac20130db40a33cb47aab0ec7337201adae59e3"
+      },
+      "S2_union": {
+        "coverage": 0.16280295632102273,
+        "mask_pixels": 29341,
+        "added_vs_S0": 183,
+        "removed_vs_S0": 0,
+        "sha256": "920d8efb4b67b1921d14ac7168a5b3d013b26fd58dd3b6118d2b98bd10f1899b"
+      }
+    }
+  },
+  {
+    "id": "29_may_bay_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      737
+    ],
+    "detector_seconds": 2.0291882999881636,
+    "components_coverage": {
+      "Wan_scratch": 0.20030628551136365,
+      "V3_scratch": 0.00034401633522727275,
+      "V3_missing": 0.060685591264204544
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.26002641157670453,
+        "mask_pixels": 46863,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "5cdcb44cc63d02cd73f5484a24e0e26aa47c8ae948d13da6580e66a4a4ae2a97"
+      },
+      "S1_v3_both": {
+        "coverage": 0.061029607599431816,
+        "mask_pixels": 10999,
+        "added_vs_S0": 5,
+        "removed_vs_S0": 35869,
+        "sha256": "127ae37593a603f3aabb08f89e4bcecd9ab119740541c726e4061fb6b039df2a"
+      },
+      "S2_union": {
+        "coverage": 0.26005415482954547,
+        "mask_pixels": 46868,
+        "added_vs_S0": 5,
+        "removed_vs_S0": 0,
+        "sha256": "e5e421f9b40379e8c0f35bfdd689acb464813278ff849f73dbcc70e6923f1b00"
+      }
+    }
+  },
+  {
+    "id": "30_vet_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      737
+    ],
+    "detector_seconds": 1.9911171999992803,
+    "components_coverage": {
+      "Wan_scratch": 0.11224920099431818,
+      "V3_scratch": 0.002752130681818182,
+      "V3_missing": 0.027976296164772728
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.13916570490056818,
+        "mask_pixels": 25081,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "3d48aae89bc77d7a602e4845a8f5f876389baae5c4af1990593b527cecd4f955"
+      },
+      "S1_v3_both": {
+        "coverage": 0.030728426846590908,
+        "mask_pixels": 5538,
+        "added_vs_S0": 185,
+        "removed_vs_S0": 19728,
+        "sha256": "c963f55f1ffa53bef9fbf1f98a9d90079fb982a59588c274192e93fddad575d1"
+      },
+      "S2_union": {
+        "coverage": 0.14019220525568182,
+        "mask_pixels": 25266,
+        "added_vs_S0": 185,
+        "removed_vs_S0": 0,
+        "sha256": "990cbaf9a8cbf39c2639d5eb6d5cd0599cfe9e7db9d2e6e8dfed6774ea8fd26d"
+      }
+    }
+  },
+  {
+    "id": "31_toa_nha_xam_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      336
+    ],
+    "native_size": [
+      1070,
+      699
+    ],
+    "detector_seconds": 1.7034462000010535,
+    "components_coverage": {
+      "Wan_scratch": 0.1187162853422619,
+      "V3_scratch": 0.0006394159226190476,
+      "V3_missing": 0.05759393601190476
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.17603701636904762,
+        "mask_pixels": 30284,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "91cb6d5833322e696233e02bfc7b70f16957d5ddf460ce5e0226f91426a8ddb8"
+      },
+      "S1_v3_both": {
+        "coverage": 0.0582275390625,
+        "mask_pixels": 10017,
+        "added_vs_S0": 9,
+        "removed_vs_S0": 20276,
+        "sha256": "863ba56521e710dc97df3136f29b4fdba2f0ffb04683caf0fe93582057e22273"
+      },
+      "S2_union": {
+        "coverage": 0.17608933221726192,
+        "mask_pixels": 30293,
+        "added_vs_S0": 9,
+        "removed_vs_S0": 0,
+        "sha256": "170b9381ca673fa1edde8b109b89e3046f7e2afaf3ebfe9fbbc3e9519e27bc1b"
+      }
+    }
+  },
+  {
+    "id": "32_tran_kinh_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      734
+    ],
+    "detector_seconds": 1.8359112000034656,
+    "components_coverage": {
+      "Wan_scratch": 0.1376065340909091,
+      "V3_scratch": 0.0006214488636363636,
+      "V3_missing": 0.06480268998579546
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.20177667791193182,
+        "mask_pixels": 36365,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "0bff27fd1308acb3ad7a7ccec23dcabd26b26fa2819757ccbf710c8e351411ab"
+      },
+      "S1_v3_both": {
+        "coverage": 0.06542413884943182,
+        "mask_pixels": 11791,
+        "added_vs_S0": 45,
+        "removed_vs_S0": 24619,
+        "sha256": "8794b1aa3d0d61810a033d6e70d92ac218472cb9c28ac4361f9e63fc51ba542a"
+      },
+      "S2_union": {
+        "coverage": 0.2020263671875,
+        "mask_pixels": 36410,
+        "added_vs_S0": 45,
+        "removed_vs_S0": 0,
+        "sha256": "8ba1ffa2edf3e1cdca91828d3ae5414fe2282946fcfa1c5364ce3b728aa167f7"
+      }
+    }
+  },
+  {
+    "id": "33_cho_vom_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      304
+    ],
+    "native_size": [
+      1070,
+      629
+    ],
+    "detector_seconds": 1.5403323999780696,
+    "components_coverage": {
+      "Wan_scratch": 0.04334781044407895,
+      "V3_scratch": 0.0010472347861842106,
+      "V3_missing": 0.034134714226973686
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.07743755139802631,
+        "mask_pixels": 12053,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "ccb7c0ada07a8d0095e1ea826c05b9088002c8cc04f043e271ca97a1fb2bd3e2"
+      },
+      "S1_v3_both": {
+        "coverage": 0.035181949013157895,
+        "mask_pixels": 5476,
+        "added_vs_S0": 60,
+        "removed_vs_S0": 6637,
+        "sha256": "1201b01f574b18c19d0fa6e3633dd2d2faffb52c7aa59b83cbf5f4d3fda2ff8f"
+      },
+      "S2_union": {
+        "coverage": 0.07782303659539473,
+        "mask_pixels": 12113,
+        "added_vs_S0": 60,
+        "removed_vs_S0": 0,
+        "sha256": "533a0ed6525236ce45568c9d8a5eb45dab21ac41dce20eb2e0fc3798d1dff877"
+      }
+    }
+  },
+  {
+    "id": "34_tuong_cam_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      384
+    ],
+    "native_size": [
+      1070,
+      816
+    ],
+    "detector_seconds": 2.0241899999964517,
+    "components_coverage": {
+      "Wan_scratch": 0.20329793294270834,
+      "V3_scratch": 0.007166544596354167,
+      "V3_missing": 0.053624471028645836
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.255706787109375,
+        "mask_pixels": 50274,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "a9cdd550a806b487ffd75172f8cce7501ad16a34db4ceeca4f05a750c57813a5"
+      },
+      "S1_v3_both": {
+        "coverage": 0.060791015625,
+        "mask_pixels": 11952,
+        "added_vs_S0": 305,
+        "removed_vs_S0": 38627,
+        "sha256": "45c2d320e8efece459ef484a2c9a662c720c31996eea48cec2138b264bf2ba82"
+      },
+      "S2_union": {
+        "coverage": 0.2572580973307292,
+        "mask_pixels": 50579,
+        "added_vs_S0": 305,
+        "removed_vs_S0": 0,
+        "sha256": "4ed09b8698045df2b2562721c1e5029acc7b4cc5a18875347c3145ff9caba3f1"
+      }
+    }
+  },
+  {
+    "id": "35_toa_nha_gach_hu_vua",
+    "kind": "real_scene",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      352
+    ],
+    "native_size": [
+      1070,
+      734
+    ],
+    "detector_seconds": 1.8303734000073746,
+    "components_coverage": {
+      "Wan_scratch": 0.12498890269886363,
+      "V3_scratch": 0.004483309659090909,
+      "V3_missing": 0.06294944069602272
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.1877108487215909,
+        "mask_pixels": 33830,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "045ad9f6f0a53c69fb4ee07fd591a9222c824aa926ce2369ea316cbd498e4a20"
+      },
+      "S1_v3_both": {
+        "coverage": 0.06736616654829546,
+        "mask_pixels": 12141,
+        "added_vs_S0": 296,
+        "removed_vs_S0": 21985,
+        "sha256": "782d4cd4708ec5899c7ffdc861149bccf8f90f7798344d0616691d30a02156ab"
+      },
+      "S2_union": {
+        "coverage": 0.18935324928977273,
+        "mask_pixels": 34126,
+        "added_vs_S0": 296,
+        "removed_vs_S0": 0,
+        "sha256": "d0ecfa201a17f76e33f337750f5ee9023f76af6afe1b105ec069783e40cc7a3b"
+      }
+    }
+  },
+  {
+    "id": "control_astronaut",
+    "kind": "intact_proxy",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      512
+    ],
+    "native_size": [
+      512,
+      512
+    ],
+    "detector_seconds": 0.6301109000050928,
+    "components_coverage": {
+      "Wan_scratch": 0.0006103515625,
+      "V3_scratch": 0.000286102294921875,
+      "V3_missing": 0.007022857666015625
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.007633209228515625,
+        "mask_pixels": 2001,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "4cdcf29db591730d9867c34e3d2315a14b666df15107968c5240b7a84307aa82"
+      },
+      "S1_v3_both": {
+        "coverage": 0.00730133056640625,
+        "mask_pixels": 1914,
+        "added_vs_S0": 73,
+        "removed_vs_S0": 160,
+        "sha256": "c07fec28ded04d8fe979e18b7c703ec0e91a441b18abae1e52d9b011c1e562f8"
+      },
+      "S2_union": {
+        "coverage": 0.00791168212890625,
+        "mask_pixels": 2074,
+        "added_vs_S0": 73,
+        "removed_vs_S0": 0,
+        "sha256": "6defca9eba2d059bbe7b3d443cd78b1c00a5d9373fef3ac0fa72bdd6e96985cd"
+      }
+    }
+  },
+  {
+    "id": "control_camera",
+    "kind": "intact_proxy",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      512
+    ],
+    "native_size": [
+      512,
+      512
+    ],
+    "detector_seconds": 0.660975699982373,
+    "components_coverage": {
+      "Wan_scratch": 0.000274658203125,
+      "V3_scratch": 2.6702880859375e-05,
+      "V3_missing": 0.00438690185546875
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.00466156005859375,
+        "mask_pixels": 1222,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "9796fde6e46349107b7b70759ef87d5eef8893dd6d164e6482dfc43788740d48"
+      },
+      "S1_v3_both": {
+        "coverage": 0.004413604736328125,
+        "mask_pixels": 1157,
+        "added_vs_S0": 7,
+        "removed_vs_S0": 72,
+        "sha256": "47891bf0ec02680fbb7e2ddd11cd79f1f8e9c86a7c9230b86923fd86df1b4326"
+      },
+      "S2_union": {
+        "coverage": 0.004688262939453125,
+        "mask_pixels": 1229,
+        "added_vs_S0": 7,
+        "removed_vs_S0": 0,
+        "sha256": "37ab743b2923e1469e19acc09f3046ec004b82854e222909f8bfd4d5be7fb699"
+      }
+    }
+  },
+  {
+    "id": "control_coffee",
+    "kind": "intact_proxy",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      336
+    ],
+    "native_size": [
+      512,
+      341
+    ],
+    "detector_seconds": 0.40637579999747686,
+    "components_coverage": {
+      "Wan_scratch": 0.012997581845238096,
+      "V3_scratch": 0.0005696614583333334,
+      "V3_missing": 0.012050083705357142
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.02491396949404762,
+        "mask_pixels": 4286,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "eca0dcd12dd4bacfb97a54ba21eff3a206fa07a01a34bde19cbe8864832ad44f"
+      },
+      "S1_v3_both": {
+        "coverage": 0.012602306547619048,
+        "mask_pixels": 2168,
+        "added_vs_S0": 43,
+        "removed_vs_S0": 2161,
+        "sha256": "c00868ead573df4c3184bc6a74765e7570b9f9e1dfcc6ee295f261606415acaa"
+      },
+      "S2_union": {
+        "coverage": 0.025163922991071428,
+        "mask_pixels": 4329,
+        "added_vs_S0": 43,
+        "removed_vs_S0": 0,
+        "sha256": "1c400a45f3d7d1f9f973b4d97e810844c1ed4f2383fa2dd15659ba45144d30bf"
+      }
+    }
+  },
+  {
+    "id": "control_rocket",
+    "kind": "intact_proxy",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      336
+    ],
+    "native_size": [
+      512,
+      342
+    ],
+    "detector_seconds": 0.44866880000336096,
+    "components_coverage": {
+      "Wan_scratch": 0.03978910900297619,
+      "V3_scratch": 0.0013950892857142857,
+      "V3_missing": 0.013881138392857142
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.04867699032738095,
+        "mask_pixels": 8374,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "f333c165ff17cbb0aaa08e84e414df16d3313e63299bf7c826a96841a818ac52"
+      },
+      "S1_v3_both": {
+        "coverage": 0.014991396949404762,
+        "mask_pixels": 2579,
+        "added_vs_S0": 178,
+        "removed_vs_S0": 5973,
+        "sha256": "75948f378389d4196509efe46003b211732fa75e8664f7723733c76bcbb58200"
+      },
+      "S2_union": {
+        "coverage": 0.04971168154761905,
+        "mask_pixels": 8552,
+        "added_vs_S0": 178,
+        "removed_vs_S0": 0,
+        "sha256": "266d0c6f90553e0fd0d42ab66fc714a114c8812dec0a93ee66661732ac1ad7e7"
+      }
+    }
+  },
+  {
+    "id": "control_flower",
+    "kind": "intact_proxy",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      512
+    ],
+    "native_size": [
+      512,
+      512
+    ],
+    "detector_seconds": 0.6233760999748483,
+    "components_coverage": {
+      "Wan_scratch": 0.0,
+      "V3_scratch": 0.0,
+      "V3_missing": 0.00136566162109375
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.00136566162109375,
+        "mask_pixels": 358,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "cfd9cf1449b3f846909a400f91d381399485e609d7da30f2cfd92249d2f4c9eb"
+      },
+      "S1_v3_both": {
+        "coverage": 0.00136566162109375,
+        "mask_pixels": 358,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "cfd9cf1449b3f846909a400f91d381399485e609d7da30f2cfd92249d2f4c9eb"
+      },
+      "S2_union": {
+        "coverage": 0.00136566162109375,
+        "mask_pixels": 358,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "cfd9cf1449b3f846909a400f91d381399485e609d7da30f2cfd92249d2f4c9eb"
+      }
+    }
+  },
+  {
+    "id": "scratch_only_astronaut",
+    "kind": "paired_scratch_only",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      512
+    ],
+    "native_size": [
+      512,
+      512
+    ],
+    "detector_seconds": 0.6723926000122447,
+    "components_coverage": {
+      "Wan_scratch": 0.1983184814453125,
+      "V3_scratch": 0.028659820556640625,
+      "V3_missing": 0.006053924560546875
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.20355606079101562,
+        "mask_pixels": 53361,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "be6c5e195d8c3f79a964fde3d453ee9dfd75b85da3e2ff4c7a430edea06d82cb",
+        "scratch_target_scores": {
+          "recall": 0.7212071051123703,
+          "precision": 0.21228987462753696,
+          "dice": 0.3280245555105114,
+          "true_positive_pixels": 11328,
+          "false_positive_pixels": 42033,
+          "false_negative_pixels": 4379
+        }
+      },
+      "S1_v3_both": {
+        "coverage": 0.0345611572265625,
+        "mask_pixels": 9060,
+        "added_vs_S0": 829,
+        "removed_vs_S0": 45130,
+        "sha256": "7417d13fc50b4b26074b15fdbfb5c8b747cd20f8da4eaef5c5fd4f8900c67d53",
+        "scratch_target_scores": {
+          "recall": 0.3628955242885338,
+          "precision": 0.6291390728476821,
+          "dice": 0.46028990188557356,
+          "true_positive_pixels": 5700,
+          "false_positive_pixels": 3360,
+          "false_negative_pixels": 10007
+        }
+      },
+      "S2_union": {
+        "coverage": 0.20671844482421875,
+        "mask_pixels": 54190,
+        "added_vs_S0": 829,
+        "removed_vs_S0": 0,
+        "sha256": "d75f70253d8950f467ca5bc224b699a2a9c770850caff87930585b894e5365be",
+        "scratch_target_scores": {
+          "recall": 0.7549500222830585,
+          "precision": 0.21882266100756598,
+          "dice": 0.3392992546175086,
+          "true_positive_pixels": 11858,
+          "false_positive_pixels": 42332,
+          "false_negative_pixels": 3849
+        }
+      }
+    },
+    "scratch_components_scores": {
+      "Wan": {
+        "recall": 0.7212071051123703,
+        "precision": 0.21789643763945526,
+        "dice": 0.3346775980500776,
+        "true_positive_pixels": 11328,
+        "false_positive_pixels": 40660,
+        "false_negative_pixels": 4379
+      },
+      "V3": {
+        "recall": 0.3614948748965429,
+        "precision": 0.7557566884067616,
+        "dice": 0.48906115417743323,
+        "true_positive_pixels": 5678,
+        "false_positive_pixels": 1835,
+        "false_negative_pixels": 10029
+      }
+    }
+  },
+  {
+    "id": "scratch_only_camera",
+    "kind": "paired_scratch_only",
+    "baseline_exact": true,
+    "processing_size": [
+      512,
+      512
+    ],
+    "native_size": [
+      512,
+      512
+    ],
+    "detector_seconds": 0.8417495999892708,
+    "components_coverage": {
+      "Wan_scratch": 0.14703369140625,
+      "V3_scratch": 0.0228729248046875,
+      "V3_missing": 0.000743865966796875
+    },
+    "policies": {
+      "S0_current": {
+        "coverage": 0.1475830078125,
+        "mask_pixels": 38688,
+        "added_vs_S0": 0,
+        "removed_vs_S0": 0,
+        "sha256": "ec31a48d80ea490d335654e9032acba22ebde5bd922fec14addf2370a9415f1a",
+        "scratch_target_scores": {
+          "recall": 0.5384860253390208,
+          "precision": 0.21862076095947064,
+          "dice": 0.3109844654839599,
+          "true_positive_pixels": 8458,
+          "false_positive_pixels": 30230,
+          "false_negative_pixels": 7249
+        }
+      },
+      "S1_v3_both": {
+        "coverage": 0.023616790771484375,
+        "mask_pixels": 6191,
+        "added_vs_S0": 1336,
+        "removed_vs_S0": 33833,
+        "sha256": "55d759740eaa0f180ee32e259988ca853dbe951127527cdaa35aaf254d7c33b7",
+        "scratch_target_scores": {
+          "recall": 0.28012987839816644,
+          "precision": 0.7107090938459053,
+          "dice": 0.4018631838524066,
+          "true_positive_pixels": 4400,
+          "false_positive_pixels": 1791,
+          "false_negative_pixels": 11307
+        }
+      },
+      "S2_union": {
+        "coverage": 0.152679443359375,
+        "mask_pixels": 40024,
+        "added_vs_S0": 1336,
+        "removed_vs_S0": 0,
+        "sha256": "c4a5a48975876da3dc5df5fd753dec17e4ff9d5394e0bf630ee61345eb7d0730",
+        "scratch_target_scores": {
+          "recall": 0.5998599350608009,
+          "precision": 0.2354087547471517,
+          "dice": 0.3381242037645117,
+          "true_positive_pixels": 9422,
+          "false_positive_pixels": 30602,
+          "false_negative_pixels": 6285
+        }
+      }
+    },
+    "scratch_components_scores": {
+      "Wan": {
+        "recall": 0.537594702998663,
+        "precision": 0.21907430469074304,
+        "dice": 0.31129380103592563,
+        "true_positive_pixels": 8444,
+        "false_positive_pixels": 30100,
+        "false_negative_pixels": 7263
+      },
+      "V3": {
+        "recall": 0.2792385560578086,
+        "precision": 0.7314876584389594,
+        "dice": 0.4041837533981477,
+        "true_positive_pixels": 4386,
+        "false_positive_pixels": 1610,
+        "false_negative_pixels": 11321
+      }
+    }
+  }
+]

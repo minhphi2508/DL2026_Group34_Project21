@@ -1,0 +1,26 @@
+version: benchmark_v1_candidate2
+seed: 20260930
+crop_size: 512
+
+suites: [noise, scratch, missing, age_quality, combined]
+severities: [low, medium, high]
+
+noise:
+  low: {sigma_min: 2.5, sigma_max: 5.0, chroma_scale: 0.12, speckle_prob: 0.00010}
+  medium: {sigma_min: 5.0, sigma_max: 9.0, chroma_scale: 0.18, speckle_prob: 0.00030}
+  high: {sigma_min: 9.0, sigma_max: 16.0, chroma_scale: 0.25, speckle_prob: 0.00070}
+
+scratch:
+  low: {count_min: 1, count_max: 2, width_min: 1, width_max: 2, alpha_min: 0.28, alpha_max: 0.50, branch_prob: 0.04, speck_count_min: 1, speck_count_max: 8, scuff_clusters: 0}
+  medium: {count_min: 2, count_max: 5, width_min: 1, width_max: 3, alpha_min: 0.35, alpha_max: 0.68, branch_prob: 0.16, speck_count_min: 8, speck_count_max: 28, scuff_clusters: 1}
+  high: {count_min: 5, count_max: 10, width_min: 1, width_max: 4, alpha_min: 0.42, alpha_max: 0.82, branch_prob: 0.32, speck_count_min: 24, speck_count_max: 70, scuff_clusters: 1}
+
+missing:
+  low: {target_coverage_min: 0.003, target_coverage_max: 0.015, stroke_width_min: 8, stroke_width_max: 20, edge_tear_prob: 0.20}
+  medium: {target_coverage_min: 0.015, target_coverage_max: 0.050, stroke_width_min: 14, stroke_width_max: 36, edge_tear_prob: 0.45}
+  high: {target_coverage_min: 0.050, target_coverage_max: 0.120, stroke_width_min: 24, stroke_width_max: 58, edge_tear_prob: 0.70}
+
+age_quality:
+  low: {blur_min: 0.0, blur_max: 0.35, downscale_min: 1.0, downscale_max: 1.25, jpeg_quality_min: 90, jpeg_quality_max: 98, contrast_min: 0.92, contrast_max: 1.00, gamma_min: 0.97, gamma_max: 1.04, fade_min: 0.00, fade_max: 0.06, vignette_min: 0.00, vignette_max: 0.06, warm_shift_prob: 0.08}
+  medium: {blur_min: 0.20, blur_max: 0.75, downscale_min: 1.15, downscale_max: 1.75, jpeg_quality_min: 76, jpeg_quality_max: 92, contrast_min: 0.82, contrast_max: 0.96, gamma_min: 0.92, gamma_max: 1.10, fade_min: 0.04, fade_max: 0.12, vignette_min: 0.03, vignette_max: 0.13, warm_shift_prob: 0.18}
+  high: {blur_min: 0.60, blur_max: 1.35, downscale_min: 1.55, downscale_max: 2.6, jpeg_quality_min: 55, jpeg_quality_max: 80, contrast_min: 0.68, contrast_max: 0.88, gamma_min: 0.86, gamma_max: 1.18, fade_min: 0.11, fade_max: 0.26, vignette_min: 0.08, vignette_max: 0.23, warm_shift_prob: 0.32}

@@ -1,0 +1,41 @@
+{
+  "status": "PILOT_COMPLETE",
+  "mask_conditions": 22,
+  "restoration_conditions": 9,
+  "policies": 3,
+  "real_restoration_conditions": 5,
+  "paired_scratch_conditions": 2,
+  "intact_restoration_controls": 2,
+  "full_face_count": {
+    "S0_current": 5,
+    "S1_v3_both": 5,
+    "S2_union": 5
+  },
+  "independent_human_ratings": false,
+  "default_changed": false,
+  "timings": {
+    "stages_seconds": {
+      "S0_current_new4": {
+        "global": 93.60601909999968
+      },
+      "S0_current": {
+        "detect_faces": 4.961612499988405,
+        "face": 12.76109769998584,
+        "blend": 4.080549500009511
+      },
+      "S1_v3_both": {
+        "global": 157.22677239999757,
+        "detect_faces": 3.4020813000097405,
+        "face": 12.48520580001059,
+        "blend": 4.254220100003295
+      },
+      "S2_union": {
+        "global": 139.83352369998465,
+        "detect_faces": 3.6868791000160854,
+        "face": 13.99586119997548,
+        "blend": 3.959771699999692
+      }
+    },
+    "caution": "S0 has 5 reused real globals and 4 new globals; do not compare cache speed with 9-image S1/S2 inference"
+  }
+}

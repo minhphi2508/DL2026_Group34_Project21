@@ -1,0 +1,94 @@
+{
+  "status": "PILOT_COMPLETE",
+  "conditions": 6,
+  "cached_ablations": 5,
+  "noise_probes": 2,
+  "real_conditions": 4,
+  "timings": {
+    "B_baseline": {
+      "face_pipeline_batch_seconds": 16.79411429996253,
+      "new_R_batch_seconds": null,
+      "R_cache_used": true
+    },
+    "D_denoise_before": {
+      "face_pipeline_batch_seconds": 15.758974600001238,
+      "new_R_batch_seconds": 169.28277140000137,
+      "R_cache_used": false,
+      "N_startup_seconds": 0.0488208000024315,
+      "N_batch_seconds": 2.05734059997485,
+      "N_seconds_per_condition": [
+        {
+          "id": "photo_00_boy",
+          "seconds": 0.380801799998153,
+          "sigma": 2.5
+        },
+        {
+          "id": "photo_01_woman",
+          "seconds": 0.37344739999389276,
+          "sigma": 3.706505537033081
+        },
+        {
+          "id": "photo_02_man",
+          "seconds": 0.2925290999992285,
+          "sigma": 3.662029266357422
+        },
+        {
+          "id": "30_vet_hu_vua",
+          "seconds": 0.2745606999960728,
+          "sigma": 2.8807029724121094
+        },
+        {
+          "id": "noise_astronaut",
+          "seconds": 0.38616799999726936,
+          "sigma": 11.341168403625488
+        },
+        {
+          "id": "noise_camera",
+          "seconds": 0.3498335999902338,
+          "sigma": 12.602130889892578
+        }
+      ]
+    },
+    "E_denoise_after": {
+      "face_pipeline_batch_seconds": 15.602614600036759,
+      "new_R_batch_seconds": null,
+      "R_cache_used": true,
+      "N_startup_seconds": 0.16849070001626387,
+      "N_batch_seconds": 2.2169327000156045,
+      "N_seconds_per_condition": [
+        {
+          "id": "photo_00_boy",
+          "seconds": 0.4337072999915108,
+          "sigma": 2.5
+        },
+        {
+          "id": "photo_01_woman",
+          "seconds": 0.33026310001150705,
+          "sigma": 2.639770984649658
+        },
+        {
+          "id": "photo_02_man",
+          "seconds": 0.32499229998211376,
+          "sigma": 3.520439386367798
+        },
+        {
+          "id": "30_vet_hu_vua",
+          "seconds": 0.28228300000773743,
+          "sigma": 2.5
+        },
+        {
+          "id": "noise_astronaut",
+          "seconds": 0.4433395000232849,
+          "sigma": 2.5
+        },
+        {
+          "id": "noise_camera",
+          "seconds": 0.4023474999994505,
+          "sigma": 2.5
+        }
+      ]
+    }
+  },
+  "conclusions_require_visual_review": true,
+  "independent_human_blind_ratings_collected": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "mask_conditions": 22,
+  "restoration_conditions": 9,
+  "policy_variants": 3,
+  "baseline_mask_exact": 22,
+  "baseline_real_finals_exact": 5,
+  "mask_geometry_exact": true,
+  "only_detector_policy_changed": true,
+  "source_and_weights_unchanged": true,
+  "reference_evaluation_only": true,
+  "training": false,
+  "threshold_search": false,
+  "heldout_test_access": false,
+  "default_changed": false
+}

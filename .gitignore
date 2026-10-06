@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+outputs/
+inputs/*
+!inputs/.gitkeep
+third_party/wan/Global/checkpoints/
+third_party/wan/Face_Enhancement/checkpoints/
+third_party/wan/Face_Detection/*.dat
+*.part
+*.installing
+.env
+*.log

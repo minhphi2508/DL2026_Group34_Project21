@@ -1,0 +1,90 @@
+{
+  "frozen_utc": "2026-10-06T12:53:26.210812+00:00",
+  "status": "FROZEN_FOR_SUBSEQUENT_VERIFICATION",
+  "pipeline": {
+    "variant": "B_wan_v3_mask",
+    "wan_scratch_threshold": 0.4,
+    "v3_channel": "missing_only",
+    "v3_missing_threshold": 0.5,
+    "v3_native_ellipse_radius": 3,
+    "v3_mask_resize": "PIL_NEAREST",
+    "v3_scaled_prediction_union": false,
+    "C3": false,
+    "MAT": false,
+    "FFDNet": false,
+    "Restormer": false,
+    "scratch_multiscale_union": false,
+    "wan_global": "Scratch_and_Quality_restore",
+    "face": "dlib68 -> Setting_9_epoch_100 FaceSR256 -> official warp/blend; skip if no face",
+    "common_max_side": 512,
+    "HR": false,
+    "validated_device": "cpu",
+    "FP32": true,
+    "TF32": false,
+    "torch_threads": 2,
+    "opencv_threads": 1,
+    "native_display": "LANCZOS display resize, not superresolution"
+  },
+  "code_bindings": {
+    "restore.py": "278157e670d4d1a659967d047a9493af420434b99f57bd8a31e822c1156e3660",
+    "restoration/__init__.py": "55afc8eadc1abd04d0f71bd14dd9ec4f4d62fb59280c2feac74de362ca227963",
+    "restoration/assets.py": "69f3191f07e0c1c6f8a245b9a29605ef5826ba7e91634b2ab6f16075dd20260c",
+    "restoration/detector.py": "bf0719a914d2290dbab4fa3a062290e2f19a58be6f375b3559a08c3b6f6e17f6",
+    "restoration/pipeline.py": "6ea44e79fd1c7719bd1807cdf935788924c38517f52d4d055eb7d87ee6d16a8d",
+    "restoration/wan_stage.py": "c7c99521b42b1eadf2f016f065b8deb9648da52acd0d228897685527fc7548d8",
+    "provenance/MODELS.json": "5dcc275f0bf00e297905a26c50988dbe55fd760ce600d529f4d35b0cd0c9202e",
+    "provenance/V3_DESCRIPTOR.json": "b9b321959b6318180f45fbbe8571569b24812b517e775e3510b7065d735a8b01"
+  },
+  "model_bindings": [
+    {
+      "path": "models/v3/twohead_candidate_v3_epoch14.pt",
+      "sha256": "73e64cc06d5bcc8960e6b7adc19a25f88cd2ae1a4ddfdc85dd31405dcf4a18d3",
+      "bytes": 97925339,
+      "origin": "project V3 checkpoint tracked in this repository"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
+      "sha256": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d",
+      "bytes": 3498887,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/VAE_A_quality/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
+      "sha256": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a",
+      "bytes": 3498887,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/VAE_B_scratch/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
+      "sha256": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578",
+      "bytes": 205392667,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth"
+    },
+    {
+      "path": "third_party/wan/Face_Enhancement/checkpoints/Setting_9_epoch_100/latest_net_G.pth",
+      "sha256": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569",
+      "bytes": 368738923,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/Setting_9_epoch_100/latest_net_G.pth"
+    },
+    {
+      "path": "third_party/wan/Global/checkpoints/detection/FT_Epoch_latest.pt",
+      "sha256": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95",
+      "bytes": 451663663,
+      "origin": "official Wan release or dlib landmark model",
+      "archive_member": "checkpoints/detection/FT_Epoch_latest.pt"
+    },
+    {
+      "path": "third_party/wan/Face_Detection/shape_predictor_68_face_landmarks.dat",
+      "sha256": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f",
+      "bytes": 99693937,
+      "origin": "official Wan release or dlib landmark model"
+    }
+  ],
+  "heldout_test_access": false,
+  "scope": "Portable recipe after known-case development; no retrospective independent-test claim",
+  "selected_decision_utc": "2026-10-06T11:22:22.023513+00:00"
+}

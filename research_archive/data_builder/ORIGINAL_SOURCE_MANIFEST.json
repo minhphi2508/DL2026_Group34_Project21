@@ -1,0 +1,131 @@
+{
+  "status": "ORIGINAL_PREPARATION_SOURCE_STAGED_EXACT_NOT_EXECUTED",
+  "files": [
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\01_fetch_finna_candidates.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\01_fetch_finna_candidates.py",
+      "bytes": 7128,
+      "sha256": "8b860e73d49381e30448192d9fe07f857523e722ea60b5b0d514527d1e5e94b9"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\02_make_contact_sheets.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\02_make_contact_sheets.py",
+      "bytes": 2748,
+      "sha256": "6c7098b1097b7920aee2b8a034b8ac137613d54d65b5066cb0aee8167e1ce77b"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\03_finalize_finna.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\03_finalize_finna.py",
+      "bytes": 4577,
+      "sha256": "747dc975c317e88b3ac316cdb662c9858d33a96bbab2f6a18eed07cbb2a89a18"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\04_fetch_synold.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\04_fetch_synold.py",
+      "bytes": 4198,
+      "sha256": "45986785a16a29c2584641ad6ada3806031558cedb5bd9b593016bf792ec9656"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\05_fetch_microsoft_real.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\05_fetch_microsoft_real.py",
+      "bytes": 2186,
+      "sha256": "2f349adbacda1feb5aeba5fc6e7658574943c5250d885dd88b1c1f58d2c05682"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\06_audit_sources.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\06_audit_sources.py",
+      "bytes": 3534,
+      "sha256": "c6e8bf6fa2e61a94078276a082460d4a3fc9e5bf1860b06a1e9db188ef6b90ff"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\07_dataset_status.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\07_dataset_status.py",
+      "bytes": 1311,
+      "sha256": "c4d0839cdd51b1629ce22eeb427561186832099681ac2b7583979df4c4a979e9"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\08_make_calibration_pack.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\08_make_calibration_pack.py",
+      "bytes": 8692,
+      "sha256": "c32eec34b302fc3080fdebf0d8d72a167454655b79cd374811614ccc734cffac"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\08b_make_core_reaudit_pack.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\08b_make_core_reaudit_pack.py",
+      "bytes": 6976,
+      "sha256": "6b29615936e2c81f3b77324d015422708720af8060fdee318a9d168421aa8e7e"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\08c_apply_core_reaudit.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\08c_apply_core_reaudit.py",
+      "bytes": 7242,
+      "sha256": "4ba16945b904cbb6bcf0d37468ebd9a8d26628b4d02dff4cd0783abdd973bfad"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\09_generate_benchmark_v1.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\09_generate_benchmark_v1.py",
+      "bytes": 5527,
+      "sha256": "160a8e8335b950edbc07228a75e70a7a5fc790ceda88dc26be7740809ef6eb90"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\10_audit_benchmark_v1.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\10_audit_benchmark_v1.py",
+      "bytes": 4281,
+      "sha256": "8a6d6fb64f3fc33b009e44646ab78a98c55b29c2699b7616ae728ce2ee9b652d"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\scripts\\11_make_benchmark_preview.py",
+      "path": "delivery\\repo_draft\\data_builder\\scripts\\11_make_benchmark_preview.py",
+      "bytes": 4030,
+      "sha256": "35ef3534b874fa6cc155768da5b7a1098b004f392a72e961b6d52520d4e5fffe"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\src\\common.py",
+      "path": "delivery\\repo_draft\\data_builder\\src\\common.py",
+      "bytes": 3000,
+      "sha256": "9925e19cbd4cd5a13b3c224eb2ddfd187ace1094b9105a6f163197cea461a0fe"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\src\\degradation_v1.py",
+      "path": "delivery\\repo_draft\\data_builder\\src\\degradation_v1.py",
+      "bytes": 21068,
+      "sha256": "cdd87f88f71cf55c7bfa503f81b7825def99ae60dca0b93b63e26b4f1b19a79b"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\README.md",
+      "path": "delivery\\repo_draft\\data_builder\\README.md",
+      "bytes": 7628,
+      "sha256": "96ad8c40bac627c9d761f183cdac7244b64a8aefce5e61ec0a989b3f2259862d"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\SOURCE_LOCK.md",
+      "path": "delivery\\repo_draft\\data_builder\\SOURCE_LOCK.md",
+      "bytes": 1026,
+      "sha256": "2a4de4083eb45f5f030111390742946378769b4618e153e95614a6be5ffd8dd1"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\LICENSE_NOTES.md",
+      "path": "delivery\\repo_draft\\data_builder\\LICENSE_NOTES.md",
+      "bytes": 1177,
+      "sha256": "1b3f1c102e3debe8c29150d81efb24911b10d3470d56a11cfd633bd9b4e34550"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\dataset_config.yaml",
+      "path": "delivery\\repo_draft\\data_builder\\dataset_config.yaml",
+      "bytes": 758,
+      "sha256": "463d03dc3289c363880d21729b81fc0daf1e83dc03e8f366082f86c372cd5ecd"
+    },
+    {
+      "source": "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\requirements.txt",
+      "path": "delivery\\repo_draft\\data_builder\\requirements.txt",
+      "bytes": 406,
+      "sha256": "c94e50e313295e780918a3ef7e6209a2c4f23c1d47dbfaaff55262acd593c759"
+    }
+  ],
+  "file_count": 20,
+  "benchmark_generation_executed": false,
+  "downloads_executed": false,
+  "test_payloads_opened": 0,
+  "final_repo_published": false,
+  "scope": "Preparation code only; current frozen datasets and handoffs not modified"
+}

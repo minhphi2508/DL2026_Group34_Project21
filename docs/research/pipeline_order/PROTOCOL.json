@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-10-06T11:42:07.971051+00:00",
+  "status": "FROZEN_BEFORE_NEW_ORDER_INFERENCE",
+  "script_sha256": "e0b4fb4639d7579a1b4880f1c7311c9be3bf68e107911e3ebc0ed3c901246889",
+  "stage_helper_sha256": "281ad7b7d9ff316f334854db6a8b421d5fb6b63147177e425586fc3cae610da1",
+  "denoiser_code_sha256": "7d2fc6f6f853bf883b757f1c454909bd93ea0eb502413aac17bf3a627294cb86",
+  "assets": {
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\github_repo\\models\\scratch_detection\\twohead_candidate_v3_epoch14.pt": "73e64cc06d5bcc8960e6b7adc19a25f88cd2ae1a4ddfdc85dd31405dcf4a18d3",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\VAE_A_quality\\latest_net_G.pth": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\VAE_B_scratch\\latest_net_G.pth": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\mapping_scratch\\latest_net_mapping_net.pth": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Face_Enhancement\\checkpoints\\Setting_9_epoch_100\\latest_net_G.pth": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\detection\\FT_Epoch_latest.pt": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Face_Detection\\shape_predictor_68_face_landmarks.dat": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\github_repo\\models\\denoising\\weights\\ffdnet_gray_clip.pth": "0b254d45dafc1ed04729b2206e0c09e5cc1e477e1d094e5a876ea45a34e5d84c"
+  },
+  "conditions": [
+    "photo_00_boy",
+    "photo_01_woman",
+    "photo_02_man",
+    "30_vet_hu_vua",
+    "noise_astronaut",
+    "noise_camera"
+  ],
+  "mask": "Same cached raw-input Wan+native V3 missing mask for four real cases; same prespecified empty mask for two auxiliary noise probes",
+  "variants": {
+    "B_baseline": "R -> F, R reused from exact cached input/mask recipe",
+    "D_denoise_before": "N(input on processing frame) -> R(same mask) -> F",
+    "E_denoise_after": "cached R -> N -> F"
+  },
+  "N": {
+    "candidate": "ffdnet_gray",
+    "blend": 0.75,
+    "sigma_scale": 1.0,
+    "tile_size": 0,
+    "threads": 2,
+    "automatic_sigma": true
+  },
+  "R": "Pinned Wan Scratch_and_Quality_restore, input geometry held constant",
+  "F": "dlib68 -> Setting_9_epoch_100 256px -> official warp/blend; copy global if no face",
+  "preprocessing": "Reuse exact historical processed RGB and mask; do not redetect or rescale masks after N",
+  "comparison": "Primary order effect at before-face images; final output also includes input-dependent face detection",
+  "metrics": "PSNR/SSIM only two artificial noise conditions; four real cases have no clean reference",
+  "cached_ablation": "A Wan alone, B Wan+V3, C B without face on all five original portraits; no new R inference for these",
+  "training": false,
+  "manual_mask_input": false,
+  "parameter_tuning": false,
+  "C3": false,
+  "MAT": false,
+  "heldout_test_access": false,
+  "promotion": "Keep selected B as default unless independent evidence supports a documented new decision",
+  "max_side": 512,
+  "HR": false,
+  "device": "cpu",
+  "FP32": true,
+  "TF32": false
+}

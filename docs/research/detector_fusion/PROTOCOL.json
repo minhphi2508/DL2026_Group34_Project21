@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-06T12:02:32.236971+00:00",
+  "status": "FIXED_BEFORE_NEW_DETECTOR_INFERENCE",
+  "script_sha256": "b192a25061f88414a5c98878bf452895897547c302440f1ddcb726339b5dbc98",
+  "stage_helper_sha256": "281ad7b7d9ff316f334854db6a8b421d5fb6b63147177e425586fc3cae610da1",
+  "detector_code_sha256": "6f86db172d164226fd4fd5c651f8b28d2394263cb6c9cfd64de21f24b650b648",
+  "assets": {
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\github_repo\\models\\scratch_detection\\twohead_candidate_v3_epoch14.pt": "73e64cc06d5bcc8960e6b7adc19a25f88cd2ae1a4ddfdc85dd31405dcf4a18d3",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\VAE_A_quality\\latest_net_G.pth": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\VAE_B_scratch\\latest_net_G.pth": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\restoration\\mapping_scratch\\latest_net_mapping_net.pth": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Face_Enhancement\\checkpoints\\Setting_9_epoch_100\\latest_net_G.pth": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Global\\checkpoints\\detection\\FT_Epoch_latest.pt": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95",
+    "C:\\Users\\HP\\Downloads\\old_photo_dataset_v1_builder\\Astra\\delivery\\pretrained_research\\full_wan\\upstream\\Face_Detection\\shape_predictor_68_face_landmarks.dat": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f"
+  },
+  "policies": {
+    "S0_current": "Wan scratch OR V3 missing",
+    "S1_v3_both": "V3 scratch OR V3 missing",
+    "S2_union": "Wan scratch OR V3 scratch OR V3 missing"
+  },
+  "v3_native_thresholds": {
+    "scratch": 0.4,
+    "missing": 0.5
+  },
+  "missing_native_margin": 3,
+  "scratch_native_margin": 0,
+  "mask_resize": "PIL_NEAREST; same historical frame",
+  "V3_scale": "native only; no added multi-scale prediction",
+  "conditions": "5 known portraits + 10 known scenes + 5 intact proxies + 2 scratch-only paired probes =22",
+  "restoration_pilot": [
+    "photo_00_boy",
+    "photo_01_woman",
+    "photo_02_man",
+    "27_thuyen_buom_hu_vua",
+    "30_vet_hu_vua",
+    "scratch_only_astronaut",
+    "scratch_only_camera",
+    "control_astronaut",
+    "control_coffee"
+  ],
+  "selection": "Damage recall AND false-positive masks AND fixed-backend outputs; retain failures",
+  "evaluation": "GT/reference only in evaluator, no reference on 15 real user images; intact scores are input-preservation proxies",
+  "restoration": "Same pinned Wan scratch+quality -> same dlib/FaceSR256/blend, skip face when none",
+  "geometry": "Processed RGB reused exactly; only mask source differs",
+  "common_max_side": 512,
+  "HR": false,
+  "device": "cpu",
+  "threads": 2,
+  "FP32": true,
+  "TF32": false,
+  "C3": false,
+  "MAT": false,
+  "FFDNet": false,
+  "training": false,
+  "threshold_search": false,
+  "manual_mask_input": false,
+  "heldout_test_access": false,
+  "default_changed": false,
+  "scope": "Known-case development; no claim of independent benchmark or universal superiority"
+}

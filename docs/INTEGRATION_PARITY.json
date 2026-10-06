@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "windows": true,
+  "device": "cpu",
+  "python": "3.12",
+  "models": 7,
+  "conditions": [
+    {
+      "id": "30_vet_hu_vua",
+      "format": "JPEG",
+      "checks": {
+        "processed_input": true,
+        "mask": true,
+        "global": true,
+        "final": true
+      },
+      "output_sha256": "ed2819a6964c9d22523370ec8b1542d780c28bde5b9de8474ae46eedf32404b9",
+      "faces": 0
+    },
+    {
+      "id": "control_coffee",
+      "format": "PNG",
+      "checks": {
+        "processed_input": true,
+        "mask": true,
+        "global": true,
+        "final": true
+      },
+      "output_sha256": "3961e1b5e57a53fa4fcd0a8cfd1ba50aa478d1240e43314f200cfef2286ccb66",
+      "faces": 0
+    },
+    {
+      "id": "photo_00_boy",
+      "format": "JPEG",
+      "checks": {
+        "processed_input": true,
+        "mask": true,
+        "global": true,
+        "final": true
+      },
+      "output_sha256": "f0a0f7b55f9fe7e58a891f657f70a22d003f9901a305944012e5df5a6454b974",
+      "faces": 1
+    },
+    {
+      "id": "photo_01_webp",
+      "format": "WEBP",
+      "checks": {
+        "processed_input": true,
+        "mask": true,
+        "global": true,
+        "final": true
+      },
+      "output_sha256": "3aa345de44518e5b7c9546813884c91056bf0279f0251263d952922c50dd892c",
+      "faces": 1
+    },
+    {
+      "id": "photo_01_woman",
+      "format": "JPEG",
+      "checks": {
+        "processed_input": true,
+        "mask": true,
+        "global": true,
+        "final": true
+      },
+      "output_sha256": "db90f1b6dfa371d9fe39cffe0cbc8b09c81055ba1f25cb8a9bc17c7d02a10d94",
+      "faces": 1
+    }
+  ],
+  "recipe": "Wan scratch OR V3 missing -> Wan global -> face/blend",
+  "heldout_test_access": false,
+  "gpu_inference_validated": false,
+  "scope": "Known authorized development parity; not quality scoring or a new test benchmark"
+}
