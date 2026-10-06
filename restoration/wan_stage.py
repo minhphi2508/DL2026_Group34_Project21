@@ -1,4 +1,4 @@
-"""Run pinned upstream Wan stages with strict CPU-safe checkpoint loading.
+"""Run pinned Microsoft stages with strict CPU-safe checkpoint loading.
 
 No model topology or inference math is replaced. Source remains unmodified.
 """

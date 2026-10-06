@@ -12,3 +12,9 @@ third_party/wan/Face_Detection/*.dat
 *.installing
 .env
 *.log
+
+# Reproduction data and newly generated experiments
+data/
+work/
+research_archive/training/v3/runs/
+*.zip

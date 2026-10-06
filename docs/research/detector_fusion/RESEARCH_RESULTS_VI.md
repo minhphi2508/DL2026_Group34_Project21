@@ -1,20 +1,20 @@
-# Nghiên cứu hướng 1: ghép detector, giữ nguyên bộ phục hồi Wan
+# Nghiên cứu hướng 1: ghép detector, giữ nguyên bộ phục hồi Microsoft
 
 Ngày: 06/10/2026. Trạng thái: thí nghiệm phát triển đã chạy; không đổi pipeline mặc định.
 
 ## Câu hỏi và thiết kế
 
-Khi giữ nguyên Wan phục hồi ảnh và mặt, thay nguồn mask có cải thiện chất lượng không? So sánh ba chính sách:
+Khi giữ nguyên Microsoft phục hồi ảnh và mặt, thay nguồn mask có cải thiện chất lượng không? So sánh ba chính sách:
 
-| Nhánh | Mask đưa vào Wan |
+| Nhánh | Mask đưa vào Microsoft |
 |---|---|
-| S0 hiện tại | Wan scratch OR V3 missing |
-| S1 V3 hai head | V3 scratch OR V3 missing |
-| S2 union | Wan scratch OR V3 scratch OR V3 missing |
+| S0 hiện tại | Microsoft scratch OR Final Version missing |
+| S1 Final Version hai head | Final Version scratch OR Final Version missing |
+| S2 union | Microsoft scratch OR Final Version scratch OR Final Version missing |
 
-Cả ba dùng cùng RGB đã được Wan chuẩn hóa kích thước, cùng trọng số và cùng các bước scratch+quality restoration → tìm mặt/align → FaceSR 256 → warp/blend. Chỉ nguồn mask thay đổi. V3 chạy trên ảnh native đã dùng trong các thí nghiệm trước; scratch >=0.4 không nới biên, missing >=0.5 và nới ellipse bán kính 3 pixel native. Resize mask bằng PIL NEAREST; không tìm threshold mới, không fine-tune, không mask tay, không C3/MAT/FFDNet. CPU FP32, TF32 tắt, 2 luồng, cạnh lớn tối đa 512, HR tắt.
+Cả ba dùng cùng RGB đã được Microsoft chuẩn hóa kích thước, cùng trọng số và cùng các bước scratch+quality restoration → tìm mặt/align → FaceSR 256 → warp/blend. Chỉ nguồn mask thay đổi. Final Version chạy trên ảnh native đã dùng trong các thí nghiệm trước; scratch >=0.4 không nới biên, missing >=0.5 và nới ellipse bán kính 3 pixel native. Resize mask bằng PIL NEAREST; không tìm threshold mới, không fine-tune, không mask tay, không C3/MAT/FFDNet. CPU FP32, TF32 tắt, 2 luồng, cạnh lớn tối đa 512, HR tắt.
 
-Protocol được ghi trước lần suy luận V3 mới, có hash của script, helper và model. Mask Wan và dữ liệu đã chuẩn hóa được tái sử dụng có kiểm tra hash. Mask S0 khớp đúng pixel với kết quả lịch sử trên cả 22 điều kiện. Đây là so sánh chính sách tích hợp cố định, không phải cuộc thi kiến trúc detector ở mọi cấu hình; head scratch V3 không có margin riêng.
+Protocol được ghi trước lần suy luận Final Version mới, có hash của script, helper và model. Mask Microsoft và dữ liệu đã chuẩn hóa được tái sử dụng có kiểm tra hash. Mask S0 khớp đúng pixel với kết quả lịch sử trên cả 22 điều kiện. Đây là so sánh chính sách tích hợp cố định, không phải cuộc thi kiến trúc detector ở mọi cấu hình; head scratch Final Version không có margin riêng.
 
 ## Dữ liệu và giới hạn
 
@@ -24,7 +24,7 @@ Pilot phục hồi 9 ca được chốt trước kết quả mask: cậu bé, ng
 
 ## Kết quả mask
 
-| Chân dung | Wan scratch (%) | V3 scratch (%) | S2 thêm pixel so với S0 |
+| Chân dung | Microsoft scratch (%) | Final Version scratch (%) | S2 thêm pixel so với S0 |
 |---|---:|---:|---:|
 | photo_00_boy | 11.4953 | 0.0164 | 11 |
 | photo_01_woman | 15.2004 | 0.1364 | 46 |
@@ -32,7 +32,7 @@ Pilot phục hồi 9 ca được chốt trước kết quả mask: cậu bé, ng
 | photo_02_man | 16.0772 | 0.0005 | 0 |
 | photo_03_girl | 10.3430 | 0.1776 | 24 |
 
-V3 scratch tìm rất ít vùng trên các chân dung đã xem. Diện tích mask lớn hơn không tự chứng minh detector chính xác hơn; ở đây ảnh overlay và output cho thấy S1 thực sự bỏ sót nhiều vết nứt nhìn thấy. Hiện tượng phù hợp với khả năng lệch phân bố giữa xước giả lập và vết rách thật, nhưng thí nghiệm này chưa chứng minh nguyên nhân cụ thể.
+Final Version scratch tìm rất ít vùng trên các chân dung đã xem. Diện tích mask lớn hơn không tự chứng minh detector chính xác hơn; ở đây ảnh overlay và output cho thấy S1 thực sự bỏ sót nhiều vết nứt nhìn thấy. Hiện tượng phù hợp với khả năng lệch phân bố giữa xước giả lập và vết rách thật, nhưng thí nghiệm này chưa chứng minh nguyên nhân cụ thể.
 
 | Probe xước | Nhánh | Recall (%) | Precision (%) | Dice (%) |
 |---|---|---:|---:|---:|
@@ -98,9 +98,9 @@ Nhận xét quan sát của trợ lý được ghi riêng trong `VISUAL_REVIEW.j
 | S1_v3_both | 157.23 | 20.14 |
 | S2_union | 139.83 | 21.64 |
 
-S0_current_new4 chỉ chạy global cho 4 ca; 5 ảnh thật S0 tái sử dụng global. Không so tốc độ S0 cache với batch 9 ảnh mới của S1/S2. Các thời gian không bao gồm mọi lần khởi động model/V3 hay tạo bảng so sánh.
+S0_current_new4 chỉ chạy global cho 4 ca; 5 ảnh thật S0 tái sử dụng global. Không so tốc độ S0 cache với batch 9 ảnh mới của S1/S2. Các thời gian không bao gồm mọi lần khởi động model/Final Version hay tạo bảng so sánh.
 
-S0 cuối khớp đúng pixel với cả 5 ảnh thật lịch sử trong pilot. Kiểm tra nguồn input, trọng số, geometry, protocol và strict checkpoint load giữ nguyên. `CHECKS.json` ghi kiểm tra thí nghiệm; `FINAL_AUDIT.json` kiểm tra PNG và 63 file Python chính thức Wan không thay đổi. ZIP có CRC và hash mọi thành viên trong `PACKAGE_CHECKS.json`.
+S0 cuối khớp đúng pixel với cả 5 ảnh thật lịch sử trong pilot. Kiểm tra nguồn input, trọng số, geometry, protocol và strict checkpoint load giữ nguyên. `CHECKS.json` ghi kiểm tra thí nghiệm; `FINAL_AUDIT.json` kiểm tra PNG và 63 file Python chính thức Microsoft không thay đổi. ZIP có CRC và hash mọi thành viên trong `PACKAGE_CHECKS.json`.
 
 ## Ý nghĩa cho bài nghiên cứu pipeline
 
@@ -108,6 +108,6 @@ Thí nghiệm tách riêng đóng góp của lựa chọn detector khỏi bộ p
 
 Đây là nghiên cứu phát triển trên ảnh đã biết. Không tuyên bố S0/S2 tối ưu toàn cục, hiệu quả trên mọi ảnh lịch sử hoặc đạt điểm benchmark mới. Báo cáo giữ cả ca thất bại; không đổi default hoặc push GitHub dựa riêng vào hai probe.
 
-Tài liệu/code chính: Microsoft Bringing Old Photos Back to Life, commit 33875eccf4ebcd3665cf38cc56f3a0ce563d3a9c; model V3 epoch 14 theo descriptor đã kiểm tra. Đóng góp dự án nằm ở dataset/huấn luyện detector, cách tích hợp và thí nghiệm kiểm soát; bộ phục hồi Wan dùng pretrained có ghi nguồn.
+Tài liệu/code chính: Microsoft Bringing Old Photos Back to Life, commit 33875eccf4ebcd3665cf38cc56f3a0ce563d3a9c; model Final Version epoch 14 theo descriptor đã kiểm tra. Đóng góp dự án nằm ở dataset/huấn luyện detector, cách tích hợp và thí nghiệm kiểm soát; bộ phục hồi Microsoft dùng pretrained có ghi nguồn.
 
 Các kết luận cuối của vòng này nằm trong `RESEARCH_DECISION_VI.md`, lập sau khi xem đủ output pilot.

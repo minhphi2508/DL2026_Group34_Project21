@@ -1,0 +1,193 @@
+{
+  "source": "Previously used scikit-image auxiliary probes and controls; fixed bytes from the development study",
+  "independent_test": false,
+  "cases": [
+    {
+      "id": "control_astronaut",
+      "study": "mask_sources",
+      "kind": "intact_proxy",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/control_astronaut/native_input.png",
+          "sha256": "48d3711f1f40fbbd45b2e3720cf1c084b3b873e02bf292da08a312ca67cf2939"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/control_astronaut/processed_input.png",
+          "sha256": "48d3711f1f40fbbd45b2e3720cf1c084b3b873e02bf292da08a312ca67cf2939"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/control_astronaut/microsoft_scratch.png",
+          "sha256": "19ac23bd2d0b22307f70c427ad9dc998cc59b1ebfec2613e1c21fb3f52207774"
+        }
+      }
+    },
+    {
+      "id": "control_camera",
+      "study": "mask_sources",
+      "kind": "intact_proxy",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/control_camera/native_input.png",
+          "sha256": "fe10d880ba2653ffab56ce84355c6161a98deb9bda56417f60eb1879ac6f6753"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/control_camera/processed_input.png",
+          "sha256": "fe10d880ba2653ffab56ce84355c6161a98deb9bda56417f60eb1879ac6f6753"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/control_camera/microsoft_scratch.png",
+          "sha256": "a482f63f06f0a5a65bdb387c06957f2976e68628a1d440351fa6c0e110ded6e1"
+        }
+      }
+    },
+    {
+      "id": "control_coffee",
+      "study": "mask_sources",
+      "kind": "intact_proxy",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/control_coffee/native_input.png",
+          "sha256": "32029eba116c64a51e3b486cbca0e164408c5b0ae046dea96a275637829c47e0"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/control_coffee/processed_input.png",
+          "sha256": "7b404321cc0632ac49e778f49c0e68a9ae2d00114d944eef59976b97e9ed7c86"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/control_coffee/microsoft_scratch.png",
+          "sha256": "e8c420fa5a6243dc44d17c1f5c2e99fbf791145e2a4a9693617a4030cc1a42b0"
+        }
+      }
+    },
+    {
+      "id": "control_rocket",
+      "study": "mask_sources",
+      "kind": "intact_proxy",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/control_rocket/native_input.png",
+          "sha256": "94deaa1a3517d145f8779545efa8cd2876720f789b1f1a4c5b7d9ba5f0cf7074"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/control_rocket/processed_input.png",
+          "sha256": "0d65d07059b2aeafd829768014a8558dc1e47d2db10d2f167349ef4db873c886"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/control_rocket/microsoft_scratch.png",
+          "sha256": "4cdf2bd7ffb8d9147bbd6379e0df46e5b65e8b2dfcef7bea740b31a35263c028"
+        }
+      }
+    },
+    {
+      "id": "control_flower",
+      "study": "mask_sources",
+      "kind": "intact_proxy",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/control_flower/native_input.png",
+          "sha256": "35e683314323318deddbebd219ae44664ce1b0f066f13e4acccded48a64ea8f1"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/control_flower/processed_input.png",
+          "sha256": "35e683314323318deddbebd219ae44664ce1b0f066f13e4acccded48a64ea8f1"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/control_flower/microsoft_scratch.png",
+          "sha256": "1707efe457307d0a5e2f5a1ec1cff55b2a44286f3c4d8dda32bf394be8963b8b"
+        }
+      }
+    },
+    {
+      "id": "scratch_only_astronaut",
+      "study": "mask_sources",
+      "kind": "paired_scratch_only",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/scratch_only_astronaut/native_input.png",
+          "sha256": "345f31be9b056fbe45b0bd5aaa060b3c7f06b9d6ea840b3e9bc518dd97dc8087"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/scratch_only_astronaut/processed_input.png",
+          "sha256": "345f31be9b056fbe45b0bd5aaa060b3c7f06b9d6ea840b3e9bc518dd97dc8087"
+        },
+        "reference": {
+          "path": "research/fixtures/mask_sources/scratch_only_astronaut/reference.png",
+          "sha256": "3c6422654eb67bc68d9ced08bf05870cb48f42687c2dbbdb57d5be8362ca4365"
+        },
+        "scratch_target": {
+          "path": "research/fixtures/mask_sources/scratch_only_astronaut/scratch_target.png",
+          "sha256": "59b84c7c659e1d2059476fcd5d9fa5a01aa0f3d19bd251d0798936f43c14ac38"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/scratch_only_astronaut/microsoft_scratch.png",
+          "sha256": "6b3ecd3070b648abd89451b9ecf3c7819731329cdb3d624ea58a6c04ae39c87b"
+        }
+      }
+    },
+    {
+      "id": "scratch_only_camera",
+      "study": "mask_sources",
+      "kind": "paired_scratch_only",
+      "assets": {
+        "native_input": {
+          "path": "research/fixtures/mask_sources/scratch_only_camera/native_input.png",
+          "sha256": "e37888fdf644b62e01d0f606aa15121ad25c2808d7650b626214bf71721b2193"
+        },
+        "processed_input": {
+          "path": "research/fixtures/mask_sources/scratch_only_camera/processed_input.png",
+          "sha256": "e37888fdf644b62e01d0f606aa15121ad25c2808d7650b626214bf71721b2193"
+        },
+        "reference": {
+          "path": "research/fixtures/mask_sources/scratch_only_camera/reference.png",
+          "sha256": "1f85b353863c1216b5e14c54e108900c634c765c56b99de8719e08be26038153"
+        },
+        "scratch_target": {
+          "path": "research/fixtures/mask_sources/scratch_only_camera/scratch_target.png",
+          "sha256": "59b84c7c659e1d2059476fcd5d9fa5a01aa0f3d19bd251d0798936f43c14ac38"
+        },
+        "microsoft_scratch": {
+          "path": "research/fixtures/mask_sources/scratch_only_camera/microsoft_scratch.png",
+          "sha256": "fb2728d67db23ab21d85100e40ac4a3ab1458fb844a4a843514ac8a09bed3e0c"
+        }
+      }
+    },
+    {
+      "id": "noise_astronaut",
+      "study": "denoising_order",
+      "kind": "auxiliary_noise_probe_empty_mask",
+      "assets": {
+        "input": {
+          "path": "research/fixtures/denoising_order/noise_astronaut/input.png",
+          "sha256": "092b44711c4fad50fc9a8f614718745c8145dcf145a331e0fee266b557ac9fd9"
+        },
+        "mask": {
+          "path": "research/fixtures/denoising_order/noise_astronaut/mask.png",
+          "sha256": "65795a5b91030a2a433dae510d1edf494082a9cfa1153cd94f3797759f68f257"
+        },
+        "reference": {
+          "path": "research/fixtures/denoising_order/noise_astronaut/reference.png",
+          "sha256": "48d3711f1f40fbbd45b2e3720cf1c084b3b873e02bf292da08a312ca67cf2939"
+        }
+      }
+    },
+    {
+      "id": "noise_camera",
+      "study": "denoising_order",
+      "kind": "auxiliary_noise_probe_empty_mask",
+      "assets": {
+        "input": {
+          "path": "research/fixtures/denoising_order/noise_camera/input.png",
+          "sha256": "3bde1cb14b203937cfabb3297300065d77ac10a263521840b163e655c62d0dd4"
+        },
+        "mask": {
+          "path": "research/fixtures/denoising_order/noise_camera/mask.png",
+          "sha256": "65795a5b91030a2a433dae510d1edf494082a9cfa1153cd94f3797759f68f257"
+        },
+        "reference": {
+          "path": "research/fixtures/denoising_order/noise_camera/reference.png",
+          "sha256": "fe10d880ba2653ffab56ce84355c6161a98deb9bda56417f60eb1879ac6f6753"
+        }
+      }
+    }
+  ]
+}

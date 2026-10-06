@@ -1,23 +1,22 @@
-# Thí nghiệm v3: paired low-severity replay
+# Training the Final Version damage detector
 
-Ứng viên nghiên cứu cho đồ án, kế thừa đầy đủ hai head của v2 epoch20. V2 giữ nguyên. Không phải resume optimizer/epoch của v2 và không đổi checkpoint production. Kết quả chỉ biết sau chạy và so sánh validation; không hứa đạt mọi tiêu chí.
+The historical directory and filename identify the original experiment. The selected detector is a two-head U-Net with a ResNet34 encoder; the final restoration pipeline uses its missing-region head. Scratch and missing thresholds are fixed at 0.4 and 0.5.
 
-## Một thay đổi sampling có giới hạn
+## Windows with NVIDIA RTX 5060 Ti 16 GB
 
-600 item mỗi epoch, giữ mixture scratch180/missing120/combined150/clean50/noise50/age50. Chọn45 positive non-low của missing và45 của combined, chuyển sang low; ghép cùng source/crop/dihedral với45clean hoặc45noise. 420 ordinary slots giữ nguyên theo counterfactual fresh generation. Low positives tăng missing40→85, combined50→95. 510 unique source mỗi epoch, đủ600 source qua15epochs theo fixture. Cặp cùng context không phải hard-negative mining theo prediction hay nhãn mặt/áo. Native flaws của ảnh historical chưa gán nhãn hoàn chỉnh.
+Set up the repository with `SETUP_RTX.cmd`, then extract the frozen processed dataset described in [../../../DATA.md](../../../DATA.md) into the repository's `data` directory. It must contain `dataset_v1` and `benchmark_v1_candidate2`.
 
-Generation epoch mới0→20, tránh phát lại đúng seed v2 đã dùng. Kiến trúc, BCE+Dice/weights, threshold scratch0.4/missing0.5, validation1600 và tất cả21gates giữ nguyên. Không global morphology, threshold search hoặc GT routing. Warmstart cộng thêm training là confound: không suy cải thiện là hiệu quả nhân quả của sampling so với unpaired fine-tune nếu chưa có ablation đó.
+From the repository root, run in PowerShell:
 
-## Ngân sách
+```powershell
+.\.venv\Scripts\python.exe research\prepare_training.py --output work\final_training
+.\.venv\Scripts\python.exe work\final_training\runner.py preflight --data-root data --run-name final_reproduction
+.\.venv\Scripts\python.exe work\final_training\runner.py smoke --data-root data --run-name final_reproduction --device cuda
+.\.venv\Scripts\python.exe work\final_training\runner.py train --data-root data --run-name final_reproduction --device cuda
+```
 
-Tối đa15epochs mới, early-stop5; budget3600s ở epoch boundary, không gồm setup/preflight/smoke/pack và epoch đang chạy có thể vượt biên. AdamW/lr3e-5/scheduler reset; không dùng optimizer/RNG cũ. CUDA BF16 nếu hỗ trợ, không FP16. FP32 convolution/matmul TF32 off, precision highest. Parent checksum/model-state parity và CUDA batch4 backward smoke phải đạt trước optimizer.
+Preparation verifies the included initialisation checkpoint and reconstructs the original sealed source bundle in a new directory. Training uses 600 source photographs, a fixed paired sampling schedule, 15 maximum epochs, batch size 4, AdamW, and validation-based selection. The protocol and source files specify the full configuration. CUDA 12.8 and the exact PyTorch profile are required for this archived training run.
 
-## Nguồn và đầu ra
+Training saves completed epochs, validation summaries, selected masks, and resume state under `work/final_training/runs/final_reproduction`. Resume only a completed epoch, with the same arguments plus `--resume`. Use a new run name for a fresh experiment. Hardware and library differences can affect exact checkpoint bytes.
 
-Parent assets/parent_v2_epoch20.pt SHA797fd66ef68cadf33173843f99ae3041e9b499aadddacf3485cba6315ac12fe9. Parent protocol1bd0ddab9b3d60bd0ef9297ae7ead0aca47aa7c2ac87da2dcd9b0dc6b0447f53, bundle d2530399c8c8cd754592b557ae95a4054061d861cf757d6a99e6d9b880867347. Parent numeric eligibility FALSE được giữ trung thực.
-
-DataRoot chỉ train/val hash-pinned từ original input packet, không test assets. Lệnh runner có preflight/smoke/train/evaluate; full train chỉ explicitCUDA. CPU smoke không optimizer/checkpoint. Các tensor HxW/RGBuint8 và mask binary giữ kích thước, pad32 không resize.
-
-Run riêng candidate_v3_pair_replay. Chọn best_eligible nếu có, nếu không giữ best_unconstrained để phân tích; numeric PASS không tự promote. Không cần inference1600thêm để xuất masks: dùng cached epoch được chọn. LIGHT<250MiB gửi lại; FULL chứa optimizer/RNG/source/parent để Drive backup và resume đúng epochcompleted. Không restore FULL vào candidate/v2 hoặc di chuyển venv.
-
-Gói launcher do final tạo sau CPU proof/seal. Nếu runtime cũ mất, dùng bootstrap original --setup-only trước v3, không chạy lại train v1. Không mở test trong phát triển; cuối cùng chỉ test sau hai freeze docs.
+For evaluating the supplied selected checkpoint, use `research/evaluate_detector.py` as documented in [../../../docs/REPRODUCIBILITY.md](../../../docs/REPRODUCIBILITY.md). The original runner's `evaluate` action requires a numerically eligible checkpoint and is not the appropriate command for the academically reviewed selected checkpoint. Evaluation records numerical gate status honestly; it does not redefine selection criteria.

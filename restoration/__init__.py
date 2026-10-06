@@ -1,1 +1,1 @@
-"""Automatic full Wan + project V3 missing-mask restoration."""
+"""Automatic Microsoft restoration + Final Version missing-region masks."""

@@ -28,5 +28,5 @@ def verify_models():
 def verify_source():
     source=read(ROOT/'provenance/UPSTREAM_SOURCE.json')
     for row in source['files']:
-        if sha(contained(row['path']))!=row['sha256']:raise ValueError('Pinned Wan source changed: '+row['path'])
+        if sha(contained(row['path']))!=row['sha256']:raise ValueError('Pinned Microsoft source changed: '+row['path'])
     return len(source['files'])

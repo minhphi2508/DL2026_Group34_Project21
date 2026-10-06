@@ -7,385 +7,385 @@
       "path": "third_party/wan/Face_Detection/align_warp_back_multiple_dlib.py",
       "sha256": "5b51dcfe21f7710407f912b63a9d949508fb192f570b4871353ff2bcd238ae79",
       "bytes": 13487,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Detection/align_warp_back_multiple_dlib_HR.py",
       "sha256": "c6b7dd316d22fad59401b8c88f77130744bdf73915bba9fd3d444a7765473ca4",
       "bytes": 13487,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Detection/detect_all_dlib.py",
       "sha256": "98f54833f4a8bb0a81c57f76356089477f0d9cafb251bf43d2cd072238a5e3f4",
       "bytes": 5291,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Detection/detect_all_dlib_HR.py",
       "sha256": "e2c0617e5b9f8f446c1000082637649e26212e8e10e3c14d7e6f2f0ed265d95c",
       "bytes": 5291,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/__init__.py",
       "sha256": "89fa77f874ca9b5d1778f1ef1f1ba94171433f9e44f2ec2ce8e96a49650529f8",
       "bytes": 624,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/base_dataset.py",
       "sha256": "54fe3d08377bb90ad24913e42b0f128c05ed4a9c38dffbe20a38187928276cf5",
       "bytes": 3892,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/custom_dataset.py",
       "sha256": "c137bd2be655cc262a406151404a6a9dff6be55143c805fe685f7254948ddd77",
       "bytes": 2149,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/face_dataset.py",
       "sha256": "7dd5cbc0501d9dd91940ce3481243756f7a967c36ef8344405ab6fd37588978e",
       "bytes": 3029,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/image_folder.py",
       "sha256": "8c15c8478f932276eedd89c2d606d89f231a049aa18ed25f8cc3a4b1823c043a",
       "bytes": 2717,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/data/pix2pix_dataset.py",
       "sha256": "85d643d32b40a940b21d66f90d785466cc54680edf443c824d43b24f65ff5817",
       "bytes": 3911,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/__init__.py",
       "sha256": "dfcf365a745d43982d6e36fe0015bbdb17993772db8c13efdf8109d5bdd12f8a",
       "bytes": 1336,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/__init__.py",
       "sha256": "9c12024667539d955675ec67efec7544160ef5c1f4e2cd901eb8badd43db2d43",
       "bytes": 1773,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/architecture.py",
       "sha256": "e21604249590564ff11a3acd8861346a9630037ad8383ff30ba7313bd9e27430",
       "bytes": 6291,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/base_network.py",
       "sha256": "03a3d8dadd6d439c28a29364096f1d65541d35d94cbd47edd90fd2f0ceeebbd0",
       "bytes": 2370,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/encoder.py",
       "sha256": "8f8c4c4bd2adc446ffbe6274bb8549a85c88a14da02bbdfda310362ddc16d7e6",
       "bytes": 1873,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/generator.py",
       "sha256": "67044b91b76e92169baa83f32cc9180755b9b48dfc8175b2e79bb352cbf871a4",
       "bytes": 8343,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/networks/normalization.py",
       "sha256": "c71130f87f3ae174e22024be7acaac9728ee1bb5eb29b2f3905cdabf3f0ba2df",
       "bytes": 3848,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/models/pix2pix_model.py",
       "sha256": "c6781e81fc34617d76752eb2ed506d068c405de15a1e1b3966caf3fe6019bd27",
       "bytes": 9786,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/options/__init__.py",
       "sha256": "1c8a20fa5b81a909cb9336b543c6f7e11af5415bbab6e880cb9b0eaf2d2f20f8",
       "bytes": 73,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/options/base_options.py",
       "sha256": "bb8ba89e36762e8863e5e151b155bd35f50fc8d1b1f06cc5aff24d0967635f50",
       "bytes": 10935,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/options/test_options.py",
       "sha256": "8648c1bec3240c236e9853b3abb95113eada706390c8e1d6397d20c1405bd4e0",
       "bytes": 968,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/test_face.py",
       "sha256": "7bbb01b2d4e060a8265d880e2fd3c19a35fe7b28cb01bf0105651e765cfab96f",
       "bytes": 1077,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/util/__init__.py",
       "sha256": "1c8a20fa5b81a909cb9336b543c6f7e11af5415bbab6e880cb9b0eaf2d2f20f8",
       "bytes": 73,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/util/iter_counter.py",
       "sha256": "eed53b3ba2d71495ed2989655a0ccec830a1f3914a08937244ac6b59a983d8d3",
       "bytes": 3009,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/util/util.py",
       "sha256": "fa61fecc5236fe7c53d74ba3de614873206f56cd620942b57fa22fe698b1156e",
       "bytes": 6590,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Face_Enhancement/util/visualizer.py",
       "sha256": "e74029f43467e8183070e6084958c2fee34ff501b0435b99aeab1ade31f7e3aa",
       "bytes": 4786,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/GUI.py",
       "sha256": "7c75e56933f2d4c101733803e68c28927c9106c6cf386ce49b07a86b799a537d",
       "bytes": 7241,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/Create_Bigfile.py",
       "sha256": "7809f56405272c3316f00d0476e9863920ccda0bf8fb9b042a0118c68f22b569",
       "bytes": 1952,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/Load_Bigfile.py",
       "sha256": "8a181b3584c9ee85bbbeb7ed6011dd2c402cdbef1f1ce4037cfce15a1592c0b0",
       "bytes": 1590,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/base_data_loader.py",
       "sha256": "23b905df7af3e931d6a59502f61a0c3e162a5e4778cdc104a6d5b1d5578153f9",
       "bytes": 268,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/base_dataset.py",
       "sha256": "d49dfff63ba3e86a850fabc23cb269e995735db7698603a361d0b3358e059a65",
       "bytes": 3596,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/custom_dataset_data_loader.py",
       "sha256": "bc728ec14fd0fb95d264a8df1515bec2ff694a36728c5cd1233a25403132d8a3",
       "bytes": 1316,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/data_loader.py",
       "sha256": "f90f6b5dbcd848912ed915b5e7f1881e4772c47320e756bb51117f77393cbf57",
       "bytes": 302,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/image_folder.py",
       "sha256": "7ef83e6db7f7c31a80f610d2b96bd65206f506b6e99f57d7e7eef349cec9dcab",
       "bytes": 1643,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/data/online_dataset_for_old_photos.py",
       "sha256": "3c038fb062b742e9288b24f9d0268331f20b83eb608188a4a2828dbc304ab451",
       "bytes": 15313,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection.py",
       "sha256": "e8164f8cac3db21aa0f523fad4327228c1490b1406c558405263e3b9b03389a6",
       "bytes": 5032,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection_models/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection_models/antialiasing.py",
       "sha256": "277bcecdf3e81e3238494c42ba12e7b9dfbe509c531b724abaa8c80f7e74cca5",
       "bytes": 2451,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection_models/networks.py",
       "sha256": "5aaa9f8d23620be0d7cf27b9da634134f5fb1bff20d2b7c043232b7f27fa0013",
       "bytes": 11753,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection_util/util.py",
       "sha256": "0857d4d90ae9aeda71c54e3beaa52aeaa95ecf8a9c4e8b3a7f8e85a312b17af8",
       "bytes": 7981,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/NonLocal_feature_mapping_model.py",
       "sha256": "68635d5673a0251016661301132667626e914463bacf7e4a73d51c191b6e1f2f",
       "bytes": 6414,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/base_model.py",
       "sha256": "efb8c36856dcae27c10297fa2c7268cd1e8b0d6ff00fa337d8ddb2221f2e9c09",
       "bytes": 4281,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/mapping_model.py",
       "sha256": "c98a48bddf92e4adbaebd8b75df74394ad64a1a183c14b76b1983dc1a8660ca8",
       "bytes": 13758,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/models.py",
       "sha256": "8c41a6ff3d3464241d8542323ec5f97424fbf352669f3e9c5f82859a29b15997",
       "bytes": 1212,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/networks.py",
       "sha256": "1a003d6d3650150fc98f0795569a6d5ff5350bb83f597a802fdb3dc91a2b1c0c",
       "bytes": 30705,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/pix2pixHD_model.py",
       "sha256": "b8535d918e0b4eb44433806ec670284113d9da064020d0426cef8b5706bcafc3",
       "bytes": 15127,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/models/pix2pixHD_model_DA.py",
       "sha256": "f40e869ee1f93ca5f300885b35e978d3c439d2ea91f2140b7964f6b64992c9c4",
       "bytes": 16499,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/options/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/options/base_options.py",
       "sha256": "f428076e840a7ae6ec9de4d2a700acbd77dc75319feeb7ed12c23a8ac4e2cc30",
       "bytes": 16231,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/options/test_options.py",
       "sha256": "d6d4adcc07e08ee07c7d40254b7a424a5cd5cc560b6f162bae9079fe8e761269",
       "bytes": 4605,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/options/train_options.py",
       "sha256": "164cf49f47c7bbe6022dc38eb6be43a31e59cd2ed18bad545178ca61d518663e",
       "bytes": 5199,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/test.py",
       "sha256": "a520ec75067ac823aa6d7ef1471b1333cceec9197c79bea66f8eb8d83b40b8fc",
       "bytes": 6028,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/train_domain_A.py",
       "sha256": "82b6a31e67cdbf66672f5c7910a23a75cf3dd88aa5a4eb50b25b0d14b930056f",
       "bytes": 5403,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/train_domain_B.py",
       "sha256": "73c8ce608cd69e61dde38598d01dd715bdf7410b15640d9cfc0bcf105c01e7b1",
       "bytes": 5193,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/train_mapping.py",
       "sha256": "8f6585a8d59b63b7b7a4d26917389ced5dafe98254e7976ced284039d796b5b5",
       "bytes": 5954,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/util/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/util/image_pool.py",
       "sha256": "de4596d6d1a0d5945868a0c6618d1b893597ceeb65c2e450b5e825cd2dde506f",
       "bytes": 1166,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/util/util.py",
       "sha256": "7ad09a096dc7ea5693261c72494ee0e700507792d0e73346751816d662a05455",
       "bytes": 1845,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/util/visualizer.py",
       "sha256": "ae5761a20116d0d833ef9af403f634f98b4887e4128f48d2ee923b674080c890",
       "bytes": 5790,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/LICENSE",
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
       "bytes": 1141,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/predict.py",
       "sha256": "c0183959686a6f3566f57ed5e95bb13a04ebb33dc873c7ee1c57a9020175b88a",
       "bytes": 8086,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/run.py",
       "sha256": "e5e595d05dd9d4bf185587c92892213bff3e9a391e24fb384400af3e34c22559",
       "bytes": 6775,
-      "origin": "Wan official archive"
+      "origin": "Microsoft official archive"
     },
     {
       "path": "third_party/wan/Global/detection_models/sync_batchnorm/batchnorm.py",

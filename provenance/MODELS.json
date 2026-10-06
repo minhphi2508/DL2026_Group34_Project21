@@ -10,42 +10,42 @@
       "path": "third_party/wan/Global/checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
       "sha256": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d",
       "bytes": 3498887,
-      "origin": "official Wan release or dlib landmark model",
+      "origin": "official Microsoft release or dlib landmark model",
       "archive_member": "checkpoints/restoration/VAE_A_quality/latest_net_G.pth"
     },
     {
       "path": "third_party/wan/Global/checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
       "sha256": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a",
       "bytes": 3498887,
-      "origin": "official Wan release or dlib landmark model",
+      "origin": "official Microsoft release or dlib landmark model",
       "archive_member": "checkpoints/restoration/VAE_B_scratch/latest_net_G.pth"
     },
     {
       "path": "third_party/wan/Global/checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
       "sha256": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578",
       "bytes": 205392667,
-      "origin": "official Wan release or dlib landmark model",
+      "origin": "official Microsoft release or dlib landmark model",
       "archive_member": "checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth"
     },
     {
       "path": "third_party/wan/Face_Enhancement/checkpoints/Setting_9_epoch_100/latest_net_G.pth",
       "sha256": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569",
       "bytes": 368738923,
-      "origin": "official Wan release or dlib landmark model",
+      "origin": "official Microsoft release or dlib landmark model",
       "archive_member": "checkpoints/Setting_9_epoch_100/latest_net_G.pth"
     },
     {
       "path": "third_party/wan/Global/checkpoints/detection/FT_Epoch_latest.pt",
       "sha256": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95",
       "bytes": 451663663,
-      "origin": "official Wan release or dlib landmark model",
+      "origin": "official Microsoft release or dlib landmark model",
       "archive_member": "checkpoints/detection/FT_Epoch_latest.pt"
     },
     {
       "path": "third_party/wan/Face_Detection/shape_predictor_68_face_landmarks.dat",
       "sha256": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f",
       "bytes": 99693937,
-      "origin": "official Wan release or dlib landmark model"
+      "origin": "official Microsoft release or dlib landmark model"
     }
   ],
   "downloads": [

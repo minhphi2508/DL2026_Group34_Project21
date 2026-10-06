@@ -57,7 +57,7 @@ def execute(source,output,device):
             row['id']=f'image_{i:04d}';name=row['id']+'.png'
             with Image.open(row['source']) as im:
                 rgb=im.convert('RGB');scale=min(1,512/max(rgb.size));small=rgb.resize(tuple(round(d*scale) for d in rgb.size),Image.Resampling.LANCZOS)
-                if min(small.size)<16:raise ValueError('Extreme aspect ratio is outside the validated Wan frame: '+row['source'])
+                if min(small.size)<16:raise ValueError('Extreme aspect ratio is outside the validated Microsoft frame: '+row['source'])
                 small.save(output/'input_wan'/name)
         gpu='0' if device=='cuda' else '-1'
         stage(output,'detection',['--test_path',output/'input_wan','--output_dir',output/'wan_masks','--input_size','full_size','--GPU',gpu],device)
@@ -113,7 +113,7 @@ def execute(source,output,device):
     except Exception as error:
         journal.update(status='FAILED',error=str(error),seconds=time.perf_counter()-started);write(output/'RUN.json',journal);raise
 def main(argv=None):
-    p=argparse.ArgumentParser(description='Restore photos automatically using full Wan + V3 missing mask.')
+    p=argparse.ArgumentParser(description='Restore photos using Microsoft Bringing Old Photos Back to Life + Final Version missing-region masks.')
     p.add_argument('--input',required=True,type=Path,help='One image or a folder; folder scan is non-recursive')
     p.add_argument('--output',type=Path,help='New output folder; omitted creates outputs/run_<timestamp>')
     p.add_argument('--device',choices=['auto','cpu','cuda'],default='auto')

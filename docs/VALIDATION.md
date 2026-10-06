@@ -1,6 +1,6 @@
 # Kiểm chứng bản tích hợp Windows
 
-Ngày kiểm tra: **2026-10-06**. Recipe: **full Wan + V3 missing mask**, CPU FP32, TF32 tắt. Đây là kiểm chứng tính đúng của tích hợp và khả năng chạy; không phải một benchmark chất lượng mới.
+Ngày kiểm tra: **2026-10-06**. Recipe: **Microsoft restoration + Final Version missing mask**, CPU FP32, TF32 tắt. Đây là kiểm chứng tính đúng của tích hợp và khả năng chạy; không phải một benchmark chất lượng mới.
 
 ## Đối chiếu với kết quả nghiên cứu đã chọn
 
