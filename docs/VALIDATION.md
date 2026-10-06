@@ -20,6 +20,12 @@ Biên bản máy đọc được: [`INTEGRATION_PARITY.json`](INTEGRATION_PARITY
 
 Danh sách package thực tế của môi trường CPU nằm ở [`ENVIRONMENT_CPU_WINDOWS.txt`](ENVIRONMENT_CPU_WINDOWS.txt); đây là biên bản môi trường, không dùng nó thay profile CUDA khi cài RTX.
 
+## Kiểm tra sau khi publish
+
+Clone từ GitHub HTTPS ở commit `323f505b203a60f813fde9897665399555c06e52`, cài sáu model ngoài Git từ các archive chính thức đã xác minh, rồi chạy một chân dung bằng môi trường Python riêng ở trên. Toàn bộ hash source/protocol/checkpoint trong checkout đúng; cả face enhancement và blending hoàn tất, output final khớp từng pixel với reference. Không dùng model bị bỏ quên trong thư mục repo cũ. Xem [`REMOTE_CLONE_CHECK.json`](REMOTE_CLONE_CHECK.json).
+
+[Windows input checks trên GitHub Actions](https://github.com/minhphi2508/DL2026_Group34_Project21/actions/runs/37467714812) cũng thành công. Kiểm tra CI này chỉ kiểm tra input; nó không tải các model hoặc chạy full restoration.
+
 ## Phạm vi thực sự đã kiểm chứng
 
 Các kiểm tra trên dùng CPU. Chưa chạy suy luận CUDA của bản đóng gói trên máy RTX; `SETUP_RTX.cmd` kiểm tra CUDA thực trên máy người dùng trước khi xác nhận cài thành công. Không hứa output CUDA khớp từng pixel CPU.

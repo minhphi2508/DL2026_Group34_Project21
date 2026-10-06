@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "published_commit": "323f505b203a60f813fde9897665399555c06e52",
+  "utc": "2026-10-06T13:06:35.748646+00:00",
+  "repository": "minhphi2508/DL2026_Group34_Project21",
+  "clone_source": "GitHub HTTPS",
+  "bound_source_protocol_checkpoint_files": 87,
+  "all_seven_models_verified": true,
+  "six_external_models_installed_from_verified_official_archive_cache": true,
+  "cpu_inference_full_face_pipeline_completed": true,
+  "final_output_pixel_equal": true,
+  "environment": "isolated Python 3.12 environment shared with integration validation; no system site-packages",
+  "windows_input_checks_ci": "success",
+  "cuda_inference_validated": false,
+  "heldout_benchmark_access": false
+}
