@@ -12,3 +12,4 @@ third_party/** -text
 research_archive/training/v3/sealed_notes/*.txt -text
 research_archive/training/v3/DECISIONS_VI.md -text
 research_archive/training/v3/*.ps1 -text
+research_archive/training/v3/assets/*.yaml -text
