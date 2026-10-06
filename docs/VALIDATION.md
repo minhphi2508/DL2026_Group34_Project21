@@ -1,35 +1,17 @@
-# Kiểm chứng bản tích hợp Windows
+# Verification and scope
 
-Ngày kiểm tra: **2026-10-06**. Recipe: **Microsoft restoration + Final Version missing mask**, CPU FP32, TF32 tắt. Đây là kiểm chứng tính đúng của tích hợp và khả năng chạy; không phải một benchmark chất lượng mới.
+The completed integration was verified on Windows CPU, Python 3.12.14, PyTorch 2.8.0+cpu and torchvision 0.23.0+cpu. The GPU installation profile targets **NVIDIA RTX 5060 Ti 16 GB**, CUDA 12.8 wheels; full GPU restoration parity with CPU has not been established.
 
-## Đối chiếu với kết quả nghiên cứu đã chọn
+The checks include:
 
-Chạy lại 5 ảnh development đã được cho phép, bao gồm 3 chân dung, một cảnh có vẹt và một ảnh sạch đối chứng. Input bao gồm JPEG/JFIF, WebP và PNG. Cả 5 ca đều **khớp từng pixel** với bản nghiên cứu tại bốn điểm: ảnh xử lý đầu vào, mask kết hợp, global restoration và output final. Ba ca có mặt chạy cả face enhancement/blending; hai ca không có mặt giữ global output.
+- Five authorised development images in JPEG/JFIF, WebP and PNG: processing inputs, combined masks, global outputs and final outputs match the previously selected implementation pixel-for-pixel. Three cases include face refinement; two retain global output.
+- A separate CPU environment and an earlier GitHub clone completed the full portrait pipeline with identical final pixels.
+- Four input checks cover supported formats, Unicode names, same-stem files, invalid images and non-recursive folder scanning. GitHub Actions runs these input checks only.
+- `tools/doctor.py` checks imports, a real device computation, 76 pinned upstream source files and seven model assets.
+- The submission reproduction checks match the recorded mask/noise measurements and both portrait comparison branches. The complete original training bundle can be reconstructed without changing its protocol, source or checkpoint bytes.
 
-Biên bản máy đọc được: [`INTEGRATION_PARITY.json`](INTEGRATION_PARITY.json). Không đưa ảnh cá nhân vào Git. Không mở tập test benchmark để tinh chỉnh cấu hình tích hợp. Các thí nghiệm nghiên cứu trước đó có phạm vi riêng, ghi trong [`RESEARCH.md`](RESEARCH.md).
+Machine-readable records are grouped in [evidence](evidence). The environment listing and historical clone reports describe the runs recorded on their dates; they are not a new test of every later revision.
 
-## Môi trường và kiểm tra chức năng
+`evidence/PIPELINE_FROZEN_BEFORE_TEST.yaml` preserves the configuration and file hashes captured on 2026-10-06. Those code hashes describe that historical snapshot, not the current reorganised file layout. Current installation verifies the active identities through `provenance/MODELS.json`, `UPSTREAM_SOURCE.json` and the detector descriptor.
 
-- Windows 11, Python **3.12.14 64-bit**; môi trường `.venv` riêng, không dùng system site-packages.
-- PyTorch **2.8.0+cpu**, torchvision **0.23.0+cpu**; các dependency trực tiếp được khóa phiên bản trong `requirements.txt`.
-- `pip check`: không có dependency bị thiếu/xung đột.
-- `doctor.py --device cpu`: phép tính CPU thật thành công; **76 file source upstream** và **7 model** khớp SHA256.
-- Bốn kiểm tra input thành công: JFIF/WebP/tên Unicode và sidecar, trùng stem khác định dạng, ảnh hỏng/quá nhỏ, folder không quét đệ quy.
-- Một chân dung được chạy lại trọn pipeline trong môi trường riêng: output final khớp từng pixel với bản đã đối chiếu. [`ISOLATED_CPU_CHECK.json`](ISOLATED_CPU_CHECK.json) xác nhận cả 87 file có hash ràng buộc giữ nguyên byte trong Git index.
-- Ba URL archive chính thức phản hồi HTTPS Range hợp lệ. Các archive lưu sẵn có đúng hash; installer hỗ trợ lấy sáu model ngoài Git từ cache đã xác minh.
-
-Danh sách package thực tế của môi trường CPU nằm ở [`ENVIRONMENT_CPU_WINDOWS.txt`](ENVIRONMENT_CPU_WINDOWS.txt); đây là biên bản môi trường, không dùng nó thay profile CUDA khi cài RTX.
-
-## Kiểm tra sau khi publish
-
-Clone từ GitHub HTTPS ở commit `323f505b203a60f813fde9897665399555c06e52`, cài sáu model ngoài Git từ các archive chính thức đã xác minh, rồi chạy một chân dung bằng môi trường Python riêng ở trên. Toàn bộ hash source/protocol/checkpoint trong checkout đúng; cả face enhancement và blending hoàn tất, output final khớp từng pixel với reference. Không dùng model bị bỏ quên trong thư mục repo cũ. Xem [`REMOTE_CLONE_CHECK.json`](REMOTE_CLONE_CHECK.json).
-
-[Windows input checks trên GitHub Actions](https://github.com/minhphi2508/DL2026_Group34_Project21/actions/runs/37467714812) cũng thành công. Kiểm tra CI này chỉ kiểm tra input; nó không tải các model hoặc chạy full restoration.
-
-## Phạm vi thực sự đã kiểm chứng
-
-Các kiểm tra trên dùng CPU. Chưa chạy suy luận CUDA của bản đóng gói trên máy RTX; `SETUP_RTX.cmd` kiểm tra CUDA thực trên máy người dùng trước khi xác nhận cài thành công. Không hứa output CUDA khớp từng pixel CPU.
-
-Ảnh `native_display` chỉ resize LANCZOS để xem cùng kích thước input. Chạy thành công không bảo đảm mọi vết hỏng đã được sửa, không chứng minh bảo toàn chi tiết mặt, và không thay thế đánh giá trực quan.
-
-Recipe và hash mã/model được ghi trong [`../PIPELINE_FROZEN_BEFORE_TEST.yaml`](../PIPELINE_FROZEN_BEFORE_TEST.yaml) trước các kiểm tra tiếp theo. Đây không phải chứng nhận freeze hồi tố cho các thử nghiệm cũ.
+No new full training run or complete 1,600-condition detector validation pass was performed while packaging. Benchmark test pixels were not opened for packaging or tuning. Personal photographs are not committed to Git. Execution parity verifies integration; it does not guarantee damage removal, historical accuracy or faithful face details on every input.

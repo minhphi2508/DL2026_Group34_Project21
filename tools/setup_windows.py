@@ -2,7 +2,7 @@
 import argparse,os,subprocess,sys,venv
 from pathlib import Path
 
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[1]
 def call(*args):subprocess.run(list(map(str,args)),cwd=ROOT,check=True)
 def main():
     p=argparse.ArgumentParser();p.add_argument('--device',choices=['cpu','cuda'],required=True);a=p.parse_args()
@@ -15,9 +15,9 @@ def main():
     call(python,'-m','pip','install','--force-reinstall','--no-deps','torch==2.8.0','torchvision==0.23.0','--index-url',index)
     call(python,'-m','pip','install','-r','requirements.txt')
     call(python,'-m','pip','check')
-    call(python,'doctor.py','--device',a.device,'--skip-models')
-    call(python,'setup_models.py')
-    call(python,'doctor.py','--device',a.device)
+    call(python,'tools/doctor.py','--device',a.device,'--skip-models')
+    call(python,'tools/setup_models.py')
+    call(python,'tools/doctor.py','--device',a.device)
     print('Setup complete. Put photos in inputs, then run RUN_RESTORATION.cmd.',flush=True)
 if __name__=='__main__':
     try:main()

@@ -1,5 +1,7 @@
 """Check runtime imports, execute a device kernel, and verify pinned assets."""
 import argparse,json,platform,sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 def main():
     p=argparse.ArgumentParser();p.add_argument('--device',choices=['cpu','cuda','auto'],default='auto');p.add_argument('--skip-models',action='store_true');a=p.parse_args()
     import torch,torchvision,cv2,dlib,segmentation_models_pytorch,skimage

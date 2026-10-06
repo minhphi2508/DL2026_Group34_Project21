@@ -36,7 +36,7 @@ Place images in `inputs`, then double-click **RUN_RESTORATION.cmd**. You can als
 .\.venv\Scripts\python.exe restore.py --input "C:\Photos\old photo.jfif" --device cpu
 .\.venv\Scripts\python.exe restore.py --input "C:\Photos" --device cuda
 .\.venv\Scripts\python.exe restore.py --input inputs --output "outputs\example_run" --device auto
-.\.venv\Scripts\python.exe doctor.py --device auto
+.\.venv\Scripts\python.exe tools\doctor.py --device auto
 ```
 
 `--output` must be a **new directory**. Omit it to create a timestamped run automatically. Folder inputs are scanned one level only. Original files are preserved. If some recognised image files fail to decode, valid files can still run and failures are recorded in `RUN.json`.
@@ -78,7 +78,7 @@ flowchart TD
 
 The scratch threshold is 0.4. The selected group checkpoint is epoch 14; its missing threshold is 0.5. A radius-3 elliptical margin is applied in native coordinates before nearest-neighbour mask alignment. Only the group's missing head contributes to the default combined mask. Processing uses FP32, TF32 disabled, and the published global and 256-pixel face models. Additional denoising and expanded detector fusion are experimental comparisons, not default stages.
 
-See [FINAL_PIPELINE.md](FINAL_PIPELINE.md) and [docs/RESEARCH.md](docs/RESEARCH.md). Missing regions can remain, masks can mark healthy content, and face restoration can change details. The configuration is selected within the examined development cases rather than demonstrated optimal for every old photograph.
+See [docs/PIPELINE.md](docs/PIPELINE.md) and [docs/RESEARCH.md](docs/RESEARCH.md). Missing regions can remain, masks can mark healthy content, and face restoration can change details. The configuration is selected within the examined development cases rather than demonstrated optimal for every old photograph.
 
 ## Data, training, evaluation, and reproducing results
 
@@ -87,13 +87,13 @@ The submission includes preparation, training, evaluation, and inference source:
 | Required item | Location |
 |---|---|
 | Dataset sources, version, splits, preprocessing, download links | [DATA.md](DATA.md) |
-| Source selection and benchmark generation | [research_archive/data_builder](research_archive/data_builder/README.md) |
-| Final Version training and original fixed protocol | [research_archive/training/v3](research_archive/training/v3/README_VI.md) |
+| Source selection and benchmark generation | [research/data_preparation](research/data_preparation/README.md) |
+| Final Version training and original fixed protocol | [research/training](research/training/README.md) |
 | Evaluate the selected detector | `research/evaluate_detector.py` |
 | Compare mask sources and denoising placement | `research/run_experiments.py` |
 | Microsoft baseline versus final pipeline and face effects | `research/compare_portraits.py` |
 | Exact Windows reproduction commands and expected tables | [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) |
-| Original experiment records | [docs/research](docs/research) |
+| Original experiment records | [docs/results](docs/results) |
 
 The quantitative core contains 800 historical sources with a 600/100/100 split. Downloading the frozen processed package is needed for detector training/evaluation. Auxiliary scratch/noise probes for the pipeline experiments are included in the repository. Personal development portraits are not included; qualitative comparisons can use supplied images without claiming paired reference scores.
 
@@ -104,8 +104,8 @@ The group contributes data preparation, labelled degradation generation, detecto
 The selected detector and training initialisation checkpoint are tracked in Git. Official Microsoft/dlib archives are downloaded during setup, checked against pinned hashes, and cached in `.cache`. The first model archive download is approximately 2.8 GB; active restoration models occupy approximately 1.23 GB. Allow at least 12 GB free for CPU setup or 20 GB for the NVIDIA RTX 5060 Ti profile, plus data and outputs.
 
 ```powershell
-.\.venv\Scripts\python.exe setup_models.py --verify-only
-.\.venv\Scripts\python.exe setup_models.py --local-cache "C:\SavedModels"
+.\.venv\Scripts\python.exe tools\setup_models.py --verify-only
+.\.venv\Scripts\python.exe tools\setup_models.py --local-cache "C:\SavedModels"
 ```
 
 Rerun setup after an interrupted download to resume verified `.part` files. Keep SSL and checksum checks enabled. [provenance/MODELS.json](provenance/MODELS.json) lists exact assets.
@@ -116,11 +116,27 @@ Rerun setup after an interrupted download to resume verified `.part` files. Keep
 |---|---|
 | Python command not found | Install Python 3.12 64-bit with Add to PATH; reopen PowerShell |
 | CUDA unavailable | Check `nvidia-smi` and run `SETUP_RTX.cmd` on the NVIDIA RTX 5060 Ti, or use CPU |
-| Missing model or hash mismatch | Rerun `setup_models.py` and preserve integrity checks |
+| Missing model or hash mismatch | Rerun `tools/setup_models.py` and preserve integrity checks |
 | Out of memory | Use CPU or a smaller input; resizing can affect detections |
 | Output directory already exists | Choose a new directory or omit `--output` |
 | Stage fails | Inspect its log and `RUN.json`; intermediate images are not a completed result |
 | Damage remains after completion | Inspect detector/restoration limitations as well as execution status |
+
+## Repository map
+
+| Folder | Purpose |
+|---|---|
+| `restoration` | Final image restoration code |
+| `models` | Selected group detector weight |
+| `third_party` | Pinned Microsoft source and upstream licences |
+| `tools` | Installation and verification helpers |
+| `research` | Data preparation, training, evaluation and experiments |
+| `docs` | Pipeline, reproduction guide, findings and grouped evidence |
+| `provenance` | Active model/source identities and selected configuration |
+| `inputs` | Place your own images here |
+| `tests`, `.github` | Input checks and Windows CI |
+
+Start with the installation and image commands above. Training and research are optional when restoring a photograph. Detailed documents are indexed in [docs/README.md](docs/README.md).
 
 ## Attribution and licences
 
@@ -128,4 +144,4 @@ Rerun setup after an interrupted download to resume verified `.part` files. Keep
 - [Synchronized BatchNorm](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch), source commit `7553990fb9a917cddd9342e89b6dc12a70573f5b`.
 - [segmentation_models.pytorch](https://github.com/qubvel-org/segmentation_models.pytorch), [dlib](https://dlib.net/), and [KAIR / FFDNet](https://github.com/cszn/KAIR).
 
-See [LICENSE.md](LICENSE.md), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [CITATION.cff](CITATION.cff). Source licences and author credits are preserved. Frozen evidence and internal path identifiers retain provenance; they are not the public component name.
+See [LICENSE.md](LICENSE.md), [attribution](docs/ATTRIBUTION.md), and [CITATION.cff](CITATION.cff). Source licences and author credits are preserved. Frozen evidence and internal path identifiers retain provenance; they are not the public component name.

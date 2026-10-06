@@ -32,8 +32,8 @@ New-Item -ItemType Directory -Path work\benchmark_rebuild
 Copy-Item -Recurse data\dataset_v1 work\benchmark_rebuild\dataset_v1
 Copy-Item data\benchmark_v1_candidate2\metadata\degradation_config_v1.yaml work\benchmark_rebuild\degradation_config_v1.yaml
 Set-Location work\benchmark_rebuild
-..\..\.venv\Scripts\python.exe ..\..\research_archive\data_builder\scripts\09_generate_benchmark_v1.py --dataset-root dataset_v1 --output-root benchmark_v1_candidate2 --config degradation_config_v1.yaml
-..\..\.venv\Scripts\python.exe ..\..\research_archive\data_builder\scripts\10_audit_benchmark_v1.py --benchmark-root benchmark_v1_candidate2
+..\..\.venv\Scripts\python.exe ..\..\research\data_preparation\scripts\09_generate_benchmark_v1.py --dataset-root dataset_v1 --output-root benchmark_v1_candidate2 --config degradation_config_v1.yaml
+..\..\.venv\Scripts\python.exe ..\..\research\data_preparation\scripts\10_audit_benchmark_v1.py --benchmark-root benchmark_v1_candidate2
 Set-Location ..\..
 ```
 

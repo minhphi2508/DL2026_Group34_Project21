@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 2026-10-07
+
+- Consolidate preparation and training source under research, and installation helpers under tools.
+- Group detailed receipts under docs/evidence and measurements under docs/results.
+- Remove duplicate root pipeline summary and optional community contribution instructions.
+- Add a concise repository map and English documentation index; preserve model and sealed training identities.
+
 ## 1.1.0 — 2026-10-07
 
 - English README files and Microsoft / Final Version public component names.

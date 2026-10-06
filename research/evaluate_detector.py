@@ -10,7 +10,7 @@ def main():
     p.add_argument('--output',type=Path)
     p.add_argument('--device',choices=['cpu','cuda'],default='cpu')
     p.add_argument('--verify-only',action='store_true');a=p.parse_args()
-    sys.path.insert(0,str(ROOT/'research_archive/training/v3'))
+    sys.path.insert(0,str(ROOT/'research/training'))
     from data import FrozenData
     data=FrozenData(a.data_root)
     # The same pinned hashes govern archived and selected-model evaluation.

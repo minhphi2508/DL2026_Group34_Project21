@@ -32,7 +32,7 @@ Check that the hash matches before extracting. Use a new `data` directory. The r
 | SynOld | https://github.com/wushunshun/SynOld | Separate paired scratch examples; excluded from the 800-image Finna core |
 | Microsoft | https://github.com/microsoft/bringing-old-photos-back-to-life | Separate real qualitative examples and restoration implementation; no matching clean reference |
 
-Finna dataset cards specify CC-BY-4.0. Preserve per-image photographer, title, record ID, institution, source URL, and rights in `dataset_v1/metadata/attribution.csv`. Separate external sources retain their own terms; see `research_archive/data_builder/LICENSE_NOTES.md`. The processed download is the Finna core and benchmark package, not a claim that all external sources share one redistribution licence.
+Finna dataset cards specify CC-BY-4.0. Preserve per-image photographer, title, record ID, institution, source URL, and rights in `dataset_v1/metadata/attribution.csv`. Separate external sources retain their own terms; see `research/data_preparation/LICENSE_NOTES.md`. The processed download is the Finna core and benchmark package, not a claim that all external sources share one redistribution licence.
 
 ## Version and split
 
@@ -63,7 +63,7 @@ Validation has 1,500 damaged conditions from 100 sources, plus 100 clean control
 
 ## Preparation scripts and reproducibility
 
-All preparation scripts are included in `research_archive/data_builder/scripts`, with shared code in `research_archive/data_builder/src`. The [builder README](research_archive/data_builder/README.md) describes their roles and gives Windows commands to regenerate the benchmark in an isolated directory from the frozen selection/configuration.
+All preparation scripts are included in `research/data_preparation/scripts`, with shared code in `research/data_preparation/src`. The [builder README](research/data_preparation/README.md) describes their roles and gives Windows commands to regenerate the benchmark in an isolated directory from the frozen selection/configuration.
 
 The source acquisition/review scripts explain the preparation process. Exact report reproduction should use the supplied processed archive and compare its hashes; fresh source sampling or review is not an exact substitute. Do not overwrite the downloaded benchmark or use test results to tune the selected pipeline.
 

@@ -20,7 +20,7 @@ def verify_models():
     manifest=read(ROOT/'provenance/MODELS.json');checked=[]
     for row in manifest['models']:
         path=contained(row['path'])
-        if not path.is_file():raise FileNotFoundError(f"Missing model: {row['path']}. Run setup_models.py first.")
+        if not path.is_file():raise FileNotFoundError(f"Missing model: {row['path']}. Run tools/setup_models.py first.")
         if path.stat().st_size!=row['bytes'] or sha(path)!=row['sha256']:
             raise ValueError('Model integrity mismatch: '+row['path'])
         checked.append(dict(path=row['path'],sha256=row['sha256']))

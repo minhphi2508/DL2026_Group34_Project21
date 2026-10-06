@@ -1,6 +1,7 @@
 """Fetch only the six external pretrained files needed by the selected recipe."""
-import argparse,bz2,json,os,shutil,time,urllib.request,zipfile
+import argparse,bz2,json,os,shutil,sys,time,urllib.request,zipfile
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from restoration.assets import ROOT,sha,read,write,contained,verify_models,verify_source
 
 def download(row,cache):

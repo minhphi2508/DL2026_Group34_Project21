@@ -35,7 +35,7 @@ Reference images and synthetic labels are used only for scoring, never as infere
 | Astronaut | 72.12 / 22.082 | 36.29 / 21.274 | 75.50 / 22.183 |
 | Camera | 53.85 / 21.149 | 28.01 / 20.207 | 59.99 / 21.667 |
 
-The extra union marks 301 additional pixels across four of five controls in the original mask comparison. Increasing recall on two probes does not establish improved quality on all real photographs. This portable subset reproduces the published auxiliary measurements, not all 22 original conditions or nine real/probe restoration cases; original study records remain in [research/detector_fusion](research/detector_fusion).
+The extra union marks 301 additional pixels across four of five controls in the original mask comparison. Increasing recall on two probes does not establish improved quality on all real photographs. This portable subset reproduces the published auxiliary measurements, not all 22 original conditions or nine real/probe restoration cases; original study records remain in [results/detector_fusion](results/detector_fusion).
 
 ## 3. Compare denoising placement
 
@@ -51,7 +51,7 @@ The exact two artificial noise inputs and prespecified empty masks are included.
 | Astronaut PSNR | 27.20 | 27.26 | 27.30 | 33.97 |
 | Camera PSNR | 25.37 | 24.18 | 25.44 | 32.76 |
 
-These are development probes, not a new independent benchmark. Stored six-condition order results, including the original mixed-damage cases, are in [research/pipeline_order](research/pipeline_order). Extra denoising is excluded from the default restoration pipeline.
+These are development probes, not a new independent benchmark. Stored six-condition order results, including the original mixed-damage cases, are in [results/pipeline_order](results/pipeline_order). Extra denoising is excluded from the default restoration pipeline.
 
 ## 4. Baseline versus final pipeline and face effects
 
@@ -67,8 +67,8 @@ The five original personal portraits are not redistributed in Git. Using other i
 
 ## 5. Reproduce training
 
-The training source, initialisation checkpoint, loss, fixed schedule, and hash-bound protocol are included. Follow [the English training guide](../research_archive/training/v3/README_VI.md) to prepare a new sealed work directory and run preflight, CUDA smoke, and training on **NVIDIA RTX 5060 Ti 16 GB**. The selected supplied checkpoint allows evaluation without retraining. Exact weight bytes are not guaranteed across hardware/runtime changes.
+The training source, initialisation checkpoint, loss, fixed schedule, and hash-bound protocol are included. Follow [the English training guide](../research/training/README.md) to prepare a new sealed work directory and run preflight, CUDA smoke, and training on **NVIDIA RTX 5060 Ti 16 GB**. The selected supplied checkpoint allows evaluation without retraining. Exact weight bytes are not guaranteed across hardware/runtime changes.
 
 ## Recorded checks
 
-Model/source identity is checked by `doctor.py`; archived implementation parity and clone checks are in [VALIDATION.md](VALIDATION.md). Fresh reproduction runs have their own protocol and status files. A completed command establishes execution, while quality conclusions require the reported scores and visual comparisons.
+Model/source identity is checked by `tools/doctor.py`; archived implementation parity and clone checks are in [VALIDATION.md](VALIDATION.md). Fresh reproduction runs have their own protocol and status files. A completed command establishes execution, while quality conclusions require the reported scores and visual comparisons.

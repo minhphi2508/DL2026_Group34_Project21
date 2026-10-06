@@ -16,5 +16,5 @@ third_party/wan/Face_Detection/*.dat
 # Reproduction data and newly generated experiments
 data/
 work/
-research_archive/training/v3/runs/
+research/training/runs/
 *.zip

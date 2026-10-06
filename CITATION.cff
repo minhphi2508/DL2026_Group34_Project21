@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If using this academic integration, cite the repository and the upstream Microsoft paper separately."
 title: "DL2026 Group 34 Project 21: Old Photograph Restoration with Microsoft and Final Version Missing Masks"
 type: software
-version: "1.0.0"
-date-released: "2026-10-06"
+version: "1.1.1"
+date-released: "2026-10-07"
 repository-code: "https://github.com/minhphi2508/DL2026_Group34_Project21"
 authors:
   - name: "DL2026 Group 34"

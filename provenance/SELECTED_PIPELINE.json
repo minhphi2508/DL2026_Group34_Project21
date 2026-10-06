@@ -27,5 +27,5 @@
   },
   "historical_numeric_gate_passed": false,
   "benchmark_score_for_this_pipeline_available": false,
-  "reference": "docs/FINAL_PIPELINE.md"
+  "reference": "docs/PIPELINE.md"
 }

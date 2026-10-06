@@ -8,7 +8,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
     out=a.output.resolve()
     if out.exists():raise FileExistsError('Choose a new training work directory')
-    src=ROOT/'research_archive/training/v3';manifest=json.loads((src/'BUNDLE_MANIFEST.json').read_text())
+    src=ROOT/'research/training';manifest=json.loads((src/'BUNDLE_MANIFEST.json').read_text())
     resolved={}
     for name,expected in manifest['files'].items():
         source=src/('sealed_notes/operator_readme.txt' if name=='README_VI.md' else name)
